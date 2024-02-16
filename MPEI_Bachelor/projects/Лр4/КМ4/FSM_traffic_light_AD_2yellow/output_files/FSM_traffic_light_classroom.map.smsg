@@ -1,1 +1,0 @@
-Warning (10268): Verilog HDL information at timer.v(10): always construct contains both blocking and non-blocking assignments File: D:/MPEI/Verilog/FSM_traffic_light/src/timer.v Line: 10

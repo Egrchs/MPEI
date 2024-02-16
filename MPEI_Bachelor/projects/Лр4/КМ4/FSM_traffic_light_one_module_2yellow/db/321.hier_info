@@ -1,9 +1,0 @@
-|Universal_Shift_Register
-clk => state~1.DATAIN
-rst_n => state~3.DATAIN
-Q[0] <= Q.DB_MAX_OUTPUT_PORT_TYPE
-Q[1] <= Q.DB_MAX_OUTPUT_PORT_TYPE
-Q[2] <= Q.DB_MAX_OUTPUT_PORT_TYPE
-Q[3] <= Q.DB_MAX_OUTPUT_PORT_TYPE
-
-

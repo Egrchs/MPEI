@@ -1,1 +1,0 @@
-`include "cnt1.v"module cnt2(clk,res, Q0,Q1);input       clk, res;output 	   [3:0]  Q0;output 	   [3:0]  Q1;wire w;cnt1 DUT1 (.clk(clk),.Q(Q0),.res(res));cnt1 DUT2 (.clk(w),.Q(Q1),.res(res));assign w = (Q0==4'd9)?1'b0:1'b1;endmodule   

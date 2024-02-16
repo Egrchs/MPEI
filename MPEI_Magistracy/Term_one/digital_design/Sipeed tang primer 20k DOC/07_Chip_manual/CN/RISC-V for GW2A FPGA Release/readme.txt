@@ -1,1 +1,0 @@
-http://cdn.gowinsemi.com.cn/RISC-V_for_GW2A_FPGA_Release.zip
