@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/MPEI/Verilog/FSM_traffic_light/simulation/modelsim
+vtb_traffic_light_top
+Z1 !s110 1669845845
+!i10b 1
+!s100 BXWKlg?=8043c0MCG>2P?0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IRgYWBE=0;LV_@dkY3?kT31
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1669845195
+8D:/MPEI/Verilog/FSM_traffic_light/src/tb_traffic_light_top.v
+FD:/MPEI/Verilog/FSM_traffic_light/src/tb_traffic_light_top.v
+!i122 3
+L0 4 33
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1669845845.000000
+!s107 D:/MPEI/Verilog/FSM_traffic_light/src/traffic_light_top.v|D:/MPEI/Verilog/FSM_traffic_light/src/tb_traffic_light_top.v|
+Z6 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/MPEI/Verilog/FSM_traffic_light/src|D:/MPEI/Verilog/FSM_traffic_light/src/tb_traffic_light_top.v|
+!i113 1
+Z7 o-vlog01compat -work work
+Z8 !s92 -vlog01compat -work work +incdir+D:/MPEI/Verilog/FSM_traffic_light/src
+Z9 tCvgOpt 0
+vtimer
+R1
+!i10b 1
+!s100 dAN4zm3<cdZIF_cSKI`iP2
+R2
+IJ6C]M2Dc;W:aiJM7_fB_U0
+R3
+R0
+w1669844356
+8D:/MPEI/Verilog/FSM_traffic_light/src/timer.v
+FD:/MPEI/Verilog/FSM_traffic_light/src/timer.v
+!i122 2
+L0 1 26
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/MPEI/Verilog/FSM_traffic_light/src/timer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/MPEI/Verilog/FSM_traffic_light/src|D:/MPEI/Verilog/FSM_traffic_light/src/timer.v|
+!i113 1
+R7
+R8
+R9
+vtraffic_light
+R1
+!i10b 1
+!s100 QOz:^YTIaCzbn59gkfK;>0
+R2
+IMG^c3QI:O@iiBF4jV@ZYJ2
+R3
+R0
+w1669845673
+8D:/MPEI/Verilog/FSM_traffic_light/src/traffic_light.v
+FD:/MPEI/Verilog/FSM_traffic_light/src/traffic_light.v
+!i122 1
+L0 1 57
+R4
+r1
+!s85 0
+31
+R5
+!s107 D:/MPEI/Verilog/FSM_traffic_light/src/traffic_light.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/MPEI/Verilog/FSM_traffic_light/src|D:/MPEI/Verilog/FSM_traffic_light/src/traffic_light.v|
+!i113 1
+R7
+R8
+R9
+vtraffic_light_top
+R1
+!i10b 1
+!s100 6:Aadk8VabU>ZiidA=LEL3
+R2
+I5Z]YaFAhEjLnH5:kcRdA50
+R3
+R0
+w1669845680
+8D:/MPEI/Verilog/FSM_traffic_light/src/traffic_light_top.v
+FD:/MPEI/Verilog/FSM_traffic_light/src/traffic_light_top.v
+!i122 3
+L0 1 20
+R4
+r1
+!s85 0
+31
+R5
+Z10 !s107 D:/MPEI/Verilog/FSM_traffic_light/src/traffic_light_top.v|D:/MPEI/Verilog/FSM_traffic_light/src/tb_traffic_light_top.v|
+R6
+!i113 1
+R7
+R8
+R9

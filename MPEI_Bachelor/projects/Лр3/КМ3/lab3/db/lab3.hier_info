@@ -1,0 +1,40 @@
+|reverscnt
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[4] <= Q[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+n => always1.IN1
+n => always1.IN1
+clk => Q[0]~reg0.CLK
+clk => Q[1]~reg0.CLK
+clk => Q[2]~reg0.CLK
+clk => Q[3]~reg0.CLK
+clk => Q[4]~reg0.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+res => Q[0]~reg0.ALOAD
+res => Q[1]~reg0.ALOAD
+res => Q[2]~reg0.ALOAD
+res => Q[3]~reg0.ALOAD
+res => Q[4]~reg0.ALOAD
+res => cnt[0].ACLR
+res => cnt[1].ACLR
+res => cnt[2].ACLR
+res => cnt[3].ACLR
+res => cnt[4].ACLR
+x[0] => Q.DATAA
+x[0] => Q[0]~reg0.ADATA
+x[1] => Q.DATAA
+x[1] => Q[1]~reg0.ADATA
+x[2] => Q.DATAA
+x[2] => Q[2]~reg0.ADATA
+x[3] => Q.DATAA
+x[3] => Q[3]~reg0.ADATA
+x[4] => Q.DATAA
+x[4] => Q[4]~reg0.ADATA
+
+

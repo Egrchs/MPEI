@@ -1,0 +1,13 @@
+|Lab1_beh
+x[0] => y.IN0
+x[0] => y.IN0
+x[1] => y.IN1
+x[1] => y.IN0
+x[2] => y.IN1
+x[2] => y.IN1
+x[2] => y.IN1
+y[0] << y.DB_MAX_OUTPUT_PORT_TYPE
+y[1] << y.DB_MAX_OUTPUT_PORT_TYPE
+y[2] << y.DB_MAX_OUTPUT_PORT_TYPE
+
+

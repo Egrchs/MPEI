@@ -1,0 +1,56 @@
+`include "top.sv"
+`timescale 1 ps/ 1 ps
+
+module top_tb
+    #(
+        parameter W = 8 
+    );
+
+    logic               CLK_i;
+    logic               RST_N_I;
+
+    logic [ W-1 : 0 ]   A_i;
+    logic [ W-1 : 0 ]   B_i;
+    logic [ W-1 : 0 ]   S_o;
+    logic [ W   : 0 ]   full_add;
+    logic               P_i; 
+    logic               C_o; 
+           
+    top 
+    #( .WIDTH(W) 
+    )
+    UUT (.CLK_i(CLK_i), .RST_N_I(RST_N_I), 
+         .A_i(A_i), .B_i(B_i), .P_i(P_i), 
+         .S_o(S_o), .C_o(C_o), .full_add(full_add)
+    );
+        initial begin
+            $display("Running testbench");
+            CLK_i = 0;
+            A_i   = 0;
+            B_i   = 0;
+            P_i   = 0;
+        end
+        always #5  CLK_i =  !CLK_i; 
+
+        initial begin
+            RST_N_I = 1;
+            repeat (2) #1 RST_N_I = !RST_N_I;
+            end      
+        initial begin
+            for (int i = 0; i <= 2**W; i++) begin
+              A_i = $urandom_range(0, 2**W);
+              B_i = $urandom_range(0, 2**W);;   
+              P_i = $urandom_range(0, 1);
+              #10;                     
+            end
+        end
+        initial begin
+            #50000 $display("Testbench is OK!");
+                   $finish;
+        end
+
+        initial begin
+            $dumpfile("qqq.vcd");
+            $dumpvars;
+        end
+endmodule

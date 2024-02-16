@@ -1,0 +1,33 @@
+|traffic_light_top
+clk => clk.IN1
+led0 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+led1 <= led1.DB_MAX_OUTPUT_PORT_TYPE
+led2 <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+btn => btn.IN1
+
+
+|traffic_light_top|traffic_light:DUT1
+clk => clk.IN1
+res => res.IN1
+out_state[0] <= out_state.DB_MAX_OUTPUT_PORT_TYPE
+out_state[1] <= out_state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|traffic_light_top|traffic_light:DUT1|timer:one_second
+clk_50MHz => clk_1Hz~reg0.CLK
+clk_50MHz => cnt[0].CLK
+clk_50MHz => cnt[1].CLK
+clk_50MHz => cnt[2].CLK
+clk_50MHz => cnt[3].CLK
+clk_50MHz => cnt[4].CLK
+clk_50MHz => cnt[5].CLK
+res => clk_1Hz~reg0.ACLR
+res => cnt[0].ACLR
+res => cnt[1].ACLR
+res => cnt[2].ACLR
+res => cnt[3].ACLR
+res => cnt[4].ACLR
+res => cnt[5].ACLR
+clk_1Hz <= clk_1Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

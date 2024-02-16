@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at odin_modul_dlya_vsego.v(23): always construct contains both blocking and non-blocking assignments File: D:/MPEI/Verilog/lab4_FSM/FSM_traffic_light_one_module/src/odin_modul_dlya_vsego.v Line: 23

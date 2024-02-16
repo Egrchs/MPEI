@@ -1,0 +1,7 @@
+
+State Machine - |traffic_light_top|traffic_light:DUT1|state
+Name state.YELLOW2 state.GREEN state.YELLOW1 state.RED 
+state.RED 0 0 0 0 
+state.YELLOW1 0 0 1 1 
+state.GREEN 0 1 0 1 
+state.YELLOW2 1 0 0 1 

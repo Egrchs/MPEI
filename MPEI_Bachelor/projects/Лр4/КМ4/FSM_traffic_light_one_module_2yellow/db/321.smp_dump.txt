@@ -1,0 +1,9 @@
+
+State Machine - |Universal_Shift_Register|state
+Name state.COUNT4 state.COUNT5 state.COUNT3 state.COUNT2 state.COUNT1 state.RESET 
+state.RESET 0 0 0 0 0 0 
+state.COUNT1 0 0 0 0 1 1 
+state.COUNT2 0 0 0 1 0 1 
+state.COUNT3 0 0 1 0 0 1 
+state.COUNT5 0 1 0 0 0 1 
+state.COUNT4 1 0 0 0 0 1 
