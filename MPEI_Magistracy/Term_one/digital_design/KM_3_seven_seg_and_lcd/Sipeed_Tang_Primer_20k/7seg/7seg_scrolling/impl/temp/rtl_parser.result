@@ -1,0 +1,54 @@
+[
+ {
+  "InstFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/top.sv",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/top.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/top.sv",
+    "InstLine" : 28,
+    "InstName" : "clk_div_U",
+    "ModuleFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/clk_div.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "clk_div"
+   },
+   {
+    "InstFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/top.sv",
+    "InstLine" : 36,
+    "InstName" : "shifter_U",
+    "ModuleFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/shifter.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "shifter"
+   },
+   {
+    "InstFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/top.sv",
+    "InstLine" : 50,
+    "InstName" : "sev_seg_U",
+    "ModuleFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/sev_seg.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "sev_seg"
+   },
+   {
+    "InstFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/top.sv",
+    "InstLine" : 81,
+    "InstName" : "i_tm1638",
+    "ModuleFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/tm1638_board.sv",
+    "ModuleLine" : 218,
+    "ModuleName" : "tm1638_board_controller",
+    "SubInsts" : [
+     {
+      "InstFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/tm1638_board.sv",
+      "InstLine" : 290,
+      "InstName" : "tm1638_sio",
+      "ModuleFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/tm1638_board.sv",
+      "ModuleLine" : 475,
+      "ModuleName" : "tm1638_sio"
+     }
+    ]
+   }
+  ]
+ }
+]

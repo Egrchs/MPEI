@@ -1,0 +1,24 @@
+{
+ "Files" : [
+  {
+   "Path" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_keyboard/src/LCD_TEST_4.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_keyboard/src/button_debouncer.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_keyboard/src/top.sv",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_keyboard/impl/temp/rtl_parser.result",
+ "Top" : "top",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}

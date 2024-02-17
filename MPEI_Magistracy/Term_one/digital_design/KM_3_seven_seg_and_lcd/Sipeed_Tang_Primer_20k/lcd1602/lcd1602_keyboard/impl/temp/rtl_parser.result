@@ -1,0 +1,28 @@
+[
+ {
+  "InstFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_keyboard/src/top.sv",
+  "InstLine" : 1,
+  "InstName" : "top",
+  "ModuleFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_keyboard/src/top.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "top",
+  "SubInsts" : [
+   {
+    "InstFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_keyboard/src/top.sv",
+    "InstLine" : 34,
+    "InstName" : "u1",
+    "ModuleFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_keyboard/src/LCD_TEST_4.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "LCD_TEST_4"
+   },
+   {
+    "InstFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_keyboard/src/top.sv",
+    "InstLine" : 52,
+    "InstName" : "u2",
+    "ModuleFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_keyboard/src/button_debouncer.sv",
+    "ModuleLine" : 1,
+    "ModuleName" : "button_debouncer"
+   }
+  ]
+ }
+]

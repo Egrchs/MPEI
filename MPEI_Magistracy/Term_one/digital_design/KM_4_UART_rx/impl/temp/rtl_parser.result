@@ -1,0 +1,26 @@
+[
+ {
+  "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_4_UART_rx/src/dumpy.sv",
+  "InstLine" : 1,
+  "InstName" : "dumpy",
+  "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_4_UART_rx/src/dumpy.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "dumpy"
+ },
+ {
+  "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_4_UART_rx/src/lcd1602.sv",
+  "InstLine" : 1,
+  "InstName" : "LCD_TEST",
+  "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_4_UART_rx/src/lcd1602.sv",
+  "ModuleLine" : 1,
+  "ModuleName" : "LCD_TEST"
+ },
+ {
+  "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_4_UART_rx/src/uart_rx.sv",
+  "InstLine" : 8,
+  "InstName" : "uart_rx",
+  "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_4_UART_rx/src/uart_rx.sv",
+  "ModuleLine" : 8,
+  "ModuleName" : "uart_rx"
+ }
+]

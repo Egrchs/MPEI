@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE gowin-synthesis-project>
+<Project>
+    <Version>beta</Version>
+    <Device id="GW2A-18C" package="PBGA256" speed="8" partNumber="GW2A-LV18PG256C8/I7"/>
+    <FileList>
+        <File path="D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\clk_div.sv" type="verilog"/>
+        <File path="D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\sev_seg.sv" type="verilog"/>
+        <File path="D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\shifter.sv" type="verilog"/>
+        <File path="D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv" type="verilog"/>
+        <File path="D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv" type="verilog"/>
+    </FileList>
+    <OptionList>
+        <Option type="disable_insert_pad" value="0"/>
+        <Option type="dsp_balance" value="0"/>
+        <Option type="looplimit" value="2000"/>
+        <Option type="output_file" value="D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\impl\gwsynthesis\7seg_scrolling.vg"/>
+        <Option type="print_all_synthesis_warning" value="0"/>
+        <Option type="ram_rw_check" value="0"/>
+        <Option type="verilog_language" value="sysv-2017"/>
+        <Option type="vhdl_language" value="vhdl-1993"/>
+    </OptionList>
+</Project>

@@ -1,0 +1,11 @@
+-d D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\digital_design\KM_4_UART_rx\impl\gwsynthesis\KM_4_UART_rx.vg
+-p GW2A-18-PBGA256-8
+-pn GW2A-LV18PG256C8/I7
+-cst D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\digital_design\KM_4_UART_rx\src\KM_4_UART_rx.cst
+-cfg D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\digital_design\KM_4_UART_rx\impl\pnr\device.cfg
+-bit
+-tr
+-ph
+-timing
+-cst_error
+-route_maxfan 23

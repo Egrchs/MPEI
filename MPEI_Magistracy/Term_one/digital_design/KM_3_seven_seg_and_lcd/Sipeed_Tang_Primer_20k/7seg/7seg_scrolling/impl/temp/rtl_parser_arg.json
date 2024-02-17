@@ -1,0 +1,32 @@
+{
+ "Files" : [
+  {
+   "Path" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/clk_div.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/sev_seg.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/shifter.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/tm1638_board.sv",
+   "Type" : "verilog"
+  },
+  {
+   "Path" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/src/top.sv",
+   "Type" : "verilog"
+  }
+ ],
+ "IncludePath" : [
+
+ ],
+ "LoopLimit" : 2000,
+ "ResultFile" : "D:/repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/7seg/7seg_scrolling/impl/temp/rtl_parser.result",
+ "Top" : "",
+ "VerilogStd" : "sysv",
+ "VhdlStd" : "vhdl_93"
+}
