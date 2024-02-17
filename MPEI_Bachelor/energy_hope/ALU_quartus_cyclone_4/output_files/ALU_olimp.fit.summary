@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat May 13 09:12:43 2023
+Quartus Prime Version : 21.1.1 Build 850 06/23/2022 SJ Lite Edition
+Revision Name : ALU_olimp
+Top-level Entity Name : top_module
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 56 / 6,272 ( < 1 % )
+    Total combinational functions : 56 / 6,272 ( < 1 % )
+    Dedicated logic registers : 18 / 6,272 ( < 1 % )
+Total registers : 18
+Total pins : 25 / 92 ( 27 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

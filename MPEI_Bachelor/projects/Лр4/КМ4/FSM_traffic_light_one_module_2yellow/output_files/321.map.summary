@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Sat Dec 10 00:13:48 2022
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : 321
+Top-level Entity Name : Universal_Shift_Register
+Family : Cyclone IV E
+Total logic elements : 11
+    Total combinational functions : 7
+    Dedicated logic registers : 6
+Total registers : 6
+Total pins : 6
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

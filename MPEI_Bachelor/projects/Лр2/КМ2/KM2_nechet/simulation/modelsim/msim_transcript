@@ -1,0 +1,59 @@
+# Reading pref.tcl
+# do Lab3_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying D:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite/20.1/project/lab3_nechet/src {D:/intelFPGA_lite/20.1/project/lab3_nechet/src/dc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:31:01 on Oct 06,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite/20.1/project/lab3_nechet/src" D:/intelFPGA_lite/20.1/project/lab3_nechet/src/dc.v 
+# -- Compiling module dc
+# 
+# Top level modules:
+# 	dc
+# End time: 21:31:01 on Oct 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+D:/intelFPGA_lite/20.1/project/lab3_nechet/src {D:/intelFPGA_lite/20.1/project/lab3_nechet/src/tb_mux.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:31:02 on Oct 06,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+D:/intelFPGA_lite/20.1/project/lab3_nechet/src" D:/intelFPGA_lite/20.1/project/lab3_nechet/src/tb_mux.v 
+# -- Compiling module dmuxif
+# -- Compiling module dmux
+# -- Compiling module tb_mux
+# 
+# Top level modules:
+# 	tb_mux
+# End time: 21:31:02 on Oct 06,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_mux
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_mux 
+# Start time: 21:31:02 on Oct 06,2022
+# Loading work.tb_mux
+# Loading work.dmux
+# Loading work.dmuxif
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Start test
+# At time                    0 'tsel'=00 and 'tin'=1111111111111111 and 'tout0'=1111111111111111 and 'tout1'=0000000000000000 and 'tout2'=0000000000000000 and 'ttout0'=1111111111111111 and 'ttout1'=0000000000000000 and 'ttout2'=0000000000000000
+# At time                 5000 'tsel'=01 and 'tin'=1111111111111111 and 'tout0'=0000000000000000 and 'tout1'=1111111111111111 and 'tout2'=0000000000000000 and 'ttout0'=0000000000000000 and 'ttout1'=1111111111111111 and 'ttout2'=0000000000000000
+# At time                10000 'tsel'=10 and 'tin'=1111111111111111 and 'tout0'=0000000000000000 and 'tout1'=0000000000000000 and 'tout2'=1111111111111111 and 'ttout0'=0000000000000000 and 'ttout1'=0000000000000000 and 'ttout2'=1111111111111111
+# At time                15000 'tsel'=11 and 'tin'=1111111111111111 and 'tout0'=0000000000000000 and 'tout1'=0000000000000000 and 'tout2'=0000000000000000 and 'ttout0'=0000000000000000 and 'ttout1'=0000000000000000 and 'ttout2'=0000000000000000
+# ** Note: $stop    : D:/intelFPGA_lite/20.1/project/lab3_nechet/src/tb_mux.v(29)
+#    Time: 50 ns  Iteration: 0  Instance: /tb_mux
+# Break in Module tb_mux at D:/intelFPGA_lite/20.1/project/lab3_nechet/src/tb_mux.v line 29
+# End time: 21:35:38 on Oct 06,2022, Elapsed time: 0:04:36
+# Errors: 0, Warnings: 0

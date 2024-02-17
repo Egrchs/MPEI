@@ -1,0 +1,77 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -4.236
+TNS   : -60.858
+
+Type  : Slow 1200mV 85C Model Setup 'traffic_light:DUT1|timer:one_second|clk_1Hz'
+Slack : -2.558
+TNS   : -22.933
+
+Type  : Slow 1200mV 85C Model Hold 'traffic_light:DUT1|timer:one_second|clk_1Hz'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.742
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -41.662
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'traffic_light:DUT1|timer:one_second|clk_1Hz'
+Slack : -1.487
+TNS   : -14.870
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -3.991
+TNS   : -53.383
+
+Type  : Slow 1200mV 0C Model Setup 'traffic_light:DUT1|timer:one_second|clk_1Hz'
+Slack : -2.283
+TNS   : -20.408
+
+Type  : Slow 1200mV 0C Model Hold 'traffic_light:DUT1|timer:one_second|clk_1Hz'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.690
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -41.662
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'traffic_light:DUT1|timer:one_second|clk_1Hz'
+Slack : -1.487
+TNS   : -14.870
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -1.191
+TNS   : -11.807
+
+Type  : Fast 1200mV 0C Model Setup 'traffic_light:DUT1|timer:one_second|clk_1Hz'
+Slack : -0.479
+TNS   : -3.729
+
+Type  : Fast 1200mV 0C Model Hold 'traffic_light:DUT1|timer:one_second|clk_1Hz'
+Slack : 0.187
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.297
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -36.762
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'traffic_light:DUT1|timer:one_second|clk_1Hz'
+Slack : -1.000
+TNS   : -10.000
+
+------------------------------------------------------------

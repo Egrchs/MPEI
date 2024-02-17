@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at seven_seg_disp.v(13): always construct contains both blocking and non-blocking assignments File: D:/intelFPGA_lite/Project/ALU_olimp/src/seven_seg_disp.v Line: 13
+Warning (10268): Verilog HDL information at ALU.v(12): always construct contains both blocking and non-blocking assignments File: D:/intelFPGA_lite/Project/ALU_olimp/src/ALU.v Line: 12

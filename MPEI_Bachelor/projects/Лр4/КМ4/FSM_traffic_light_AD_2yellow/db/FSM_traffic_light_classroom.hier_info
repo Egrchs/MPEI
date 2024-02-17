@@ -1,0 +1,71 @@
+|traffic_light_top
+clk => clk.IN1
+led0 <= Equal3.DB_MAX_OUTPUT_PORT_TYPE
+led1 <= led.DB_MAX_OUTPUT_PORT_TYPE
+led2 <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
+btn => btn.IN1
+
+
+|traffic_light_top|traffic_light:DUT1
+clk => clk.IN1
+res => res.IN1
+out_state[0] <= out_state.DB_MAX_OUTPUT_PORT_TYPE
+out_state[1] <= out_state.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|traffic_light_top|traffic_light:DUT1|timer:one_second
+clk_50MHz => clk_1Hz~reg0.CLK
+clk_50MHz => cnt[0].CLK
+clk_50MHz => cnt[1].CLK
+clk_50MHz => cnt[2].CLK
+clk_50MHz => cnt[3].CLK
+clk_50MHz => cnt[4].CLK
+clk_50MHz => cnt[5].CLK
+clk_50MHz => cnt[6].CLK
+clk_50MHz => cnt[7].CLK
+clk_50MHz => cnt[8].CLK
+clk_50MHz => cnt[9].CLK
+clk_50MHz => cnt[10].CLK
+clk_50MHz => cnt[11].CLK
+clk_50MHz => cnt[12].CLK
+clk_50MHz => cnt[13].CLK
+clk_50MHz => cnt[14].CLK
+clk_50MHz => cnt[15].CLK
+clk_50MHz => cnt[16].CLK
+clk_50MHz => cnt[17].CLK
+clk_50MHz => cnt[18].CLK
+clk_50MHz => cnt[19].CLK
+clk_50MHz => cnt[20].CLK
+clk_50MHz => cnt[21].CLK
+clk_50MHz => cnt[22].CLK
+clk_50MHz => cnt[23].CLK
+clk_50MHz => cnt[24].CLK
+res => clk_1Hz~reg0.ACLR
+res => cnt[0].ACLR
+res => cnt[1].ACLR
+res => cnt[2].ACLR
+res => cnt[3].ACLR
+res => cnt[4].ACLR
+res => cnt[5].ACLR
+res => cnt[6].ACLR
+res => cnt[7].ACLR
+res => cnt[8].ACLR
+res => cnt[9].ACLR
+res => cnt[10].ACLR
+res => cnt[11].ACLR
+res => cnt[12].ACLR
+res => cnt[13].ACLR
+res => cnt[14].ACLR
+res => cnt[15].ACLR
+res => cnt[16].ACLR
+res => cnt[17].ACLR
+res => cnt[18].ACLR
+res => cnt[19].ACLR
+res => cnt[20].ACLR
+res => cnt[21].ACLR
+res => cnt[22].ACLR
+res => cnt[23].ACLR
+res => cnt[24].ACLR
+clk_1Hz <= clk_1Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

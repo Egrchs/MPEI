@@ -1,0 +1,118 @@
+#! /c/Source/iverilog-install/bin/vvp
+:ivl_version "12.0 (devel)" "(s20150603-1539-g2693dd32b)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\iverilog\lib\ivl\system.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\iverilog\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\iverilog\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\iverilog\lib\ivl\va_math.vpi";
+S_000001e8c24e2720 .scope module, "divider" "divider" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "start";
+    .port_info 2 /INPUT 5 "divident";
+    .port_info 3 /INPUT 5 "divider";
+    .port_info 4 /OUTPUT 5 "quotient";
+    .port_info 5 /OUTPUT 5 "reminder";
+    .port_info 6 /OUTPUT 1 "ready";
+L_000001e8c251a220 .functor BUFZ 5, v000001e8c2514050_0, C4<00000>, C4<00000>, C4<00000>;
+L_000001e8c2567090 .functor BUFT 1, C4<00000000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000001e8c24e2d60_0 .net/2u *"_ivl_10", 31 0, L_000001e8c2567090;  1 drivers
+v000001e8c24e2f80_0 .net *"_ivl_6", 31 0, L_000001e8c2566300;  1 drivers
+L_000001e8c2567048 .functor BUFT 1, C4<0000000000000000000000000000>, C4<0>, C4<0>, C4<0>;
+v000001e8c23aa2c0_0 .net *"_ivl_9", 27 0, L_000001e8c2567048;  1 drivers
+o000001e8c251b028 .functor BUFZ 1, C4<z>; HiZ drive
+v000001e8c23aa100_0 .net "clk", 0 0, o000001e8c251b028;  0 drivers
+v000001e8c24e28b0_0 .var "cnt", 3 0;
+o000001e8c251b088 .functor BUFZ 5, C4<zzzzz>; HiZ drive
+v000001e8c24e2950_0 .net "divident", 4 0, o000001e8c251b088;  0 drivers
+v000001e8c24e29f0_0 .var/s "divident_copy", 9 0;
+o000001e8c251b0e8 .functor BUFZ 5, C4<zzzzz>; HiZ drive
+v000001e8c24e2a90_0 .net "divider", 4 0, o000001e8c251b0e8;  0 drivers
+v000001e8c2513f10_0 .var/s "divider_copy", 9 0;
+v000001e8c2513fb0_0 .net "quotient", 4 0, L_000001e8c251a220;  1 drivers
+v000001e8c2514050_0 .var/s "r_quotient", 4 0;
+v000001e8c25140f0_0 .net "ready", 0 0, L_000001e8c2566940;  1 drivers
+v000001e8c2514190_0 .net "reminder", 4 0, L_000001e8c25668a0;  1 drivers
+o000001e8c251b208 .functor BUFZ 1, C4<z>; HiZ drive
+v000001e8c2566120_0 .net "start", 0 0, o000001e8c251b208;  0 drivers
+v000001e8c2566d00_0 .net/s "w_diff", 9 0, L_000001e8c2566620;  1 drivers
+E_000001e8c2506d00 .event posedge, v000001e8c23aa100_0;
+L_000001e8c2566620 .arith/sub 10, v000001e8c24e29f0_0, v000001e8c2513f10_0;
+L_000001e8c25668a0 .part v000001e8c24e29f0_0, 0, 5;
+L_000001e8c2566300 .concat [ 4 28 0 0], v000001e8c24e28b0_0, L_000001e8c2567048;
+L_000001e8c2566940 .cmp/eq 32, L_000001e8c2566300, L_000001e8c2567090;
+    .scope S_000001e8c24e2720;
+T_0 ;
+    %pushi/vec4 0, 0, 5;
+    %store/vec4 v000001e8c2514050_0, 0, 5;
+    %pushi/vec4 0, 0, 10;
+    %store/vec4 v000001e8c24e29f0_0, 0, 10;
+    %pushi/vec4 0, 0, 10;
+    %store/vec4 v000001e8c2513f10_0, 0, 10;
+    %pushi/vec4 0, 0, 4;
+    %store/vec4 v000001e8c24e28b0_0, 0, 4;
+    %end;
+    .thread T_0;
+    .scope S_000001e8c24e2720;
+T_1 ;
+    %wait E_000001e8c2506d00;
+    %load/vec4 v000001e8c25140f0_0;
+    %flag_set/vec4 9;
+    %flag_get/vec4 9;
+    %jmp/0 T_1.2, 9;
+    %load/vec4 v000001e8c2566120_0;
+    %and;
+T_1.2;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.0, 8;
+    %pushi/vec4 5, 0, 4;
+    %assign/vec4 v000001e8c24e28b0_0, 0;
+    %pushi/vec4 0, 0, 5;
+    %assign/vec4 v000001e8c2514050_0, 0;
+    %pushi/vec4 0, 0, 5;
+    %load/vec4 v000001e8c24e2950_0;
+    %concat/vec4; draw_concat_vec4
+    %assign/vec4 v000001e8c24e29f0_0, 0;
+    %pushi/vec4 0, 0, 1;
+    %load/vec4 v000001e8c24e2a90_0;
+    %concat/vec4; draw_concat_vec4
+    %concati/vec4 0, 0, 4;
+    %assign/vec4 v000001e8c2513f10_0, 0;
+    %jmp T_1.1;
+T_1.0 ;
+    %load/vec4 v000001e8c24e28b0_0;
+    %subi 1, 0, 4;
+    %assign/vec4 v000001e8c24e28b0_0, 0;
+    %load/vec4 v000001e8c2513f10_0;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %shiftr 4;
+    %assign/vec4 v000001e8c2513f10_0, 0;
+    %load/vec4 v000001e8c2566d00_0;
+    %parti/s 1, 9, 5;
+    %nor/r;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_1.3, 8;
+    %load/vec4 v000001e8c2566d00_0;
+    %assign/vec4 v000001e8c24e29f0_0, 0;
+    %load/vec4 v000001e8c2513fb0_0;
+    %parti/s 4, 0, 2;
+    %concati/vec4 1, 0, 1;
+    %assign/vec4 v000001e8c2514050_0, 0;
+    %jmp T_1.4;
+T_1.3 ;
+    %load/vec4 v000001e8c2513fb0_0;
+    %parti/s 4, 0, 2;
+    %concati/vec4 0, 0, 1;
+    %assign/vec4 v000001e8c2514050_0, 0;
+T_1.4 ;
+T_1.1 ;
+    %jmp T_1;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "divider.v";

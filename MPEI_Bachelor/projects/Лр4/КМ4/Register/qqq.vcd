@@ -1,0 +1,174 @@
+$date
+	Thu Dec 08 16:30:51 2022
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module tb_register $end
+$var wire 16 ! Q [15:0] $end
+$var reg 16 " D [15:0] $end
+$var reg 4 # M [3:0] $end
+$var reg 1 $ clk $end
+$var reg 1 % res $end
+$var reg 3 & set [2:0] $end
+$scope module DUT $end
+$var wire 16 ' D [15:0] $end
+$var wire 4 ( M [3:0] $end
+$var wire 1 $ clk $end
+$var wire 16 ) outstate [15:0] $end
+$var wire 1 % res $end
+$var wire 3 * set [2:0] $end
+$var parameter 32 + ARIF_LEFT $end
+$var parameter 32 , ARIF_RIGHT $end
+$var parameter 32 - LOAD $end
+$var parameter 32 . LOG_LEFT $end
+$var parameter 32 / LOG_RIGHT $end
+$var reg 16 0 Q [15:0] $end
+$var reg 3 1 nextstate [2:0] $end
+$var reg 3 2 state [2:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 /
+b10 .
+b0 -
+b11 ,
+b100 +
+$end
+#0
+$dumpvars
+bx 2
+b0 1
+bx 0
+b0 *
+bx )
+b11 (
+b1001101001 '
+b0 &
+1%
+0$
+b11 #
+b1001101001 "
+bx !
+$end
+#1
+b1001101001 !
+b1001101001 )
+b1001101001 0
+b0 2
+0%
+#2
+1%
+#5
+1$
+#10
+0$
+#15
+1$
+#20
+0$
+#25
+1$
+#30
+b1 1
+0$
+b1 &
+b1 *
+#35
+b1001101 !
+b1001101 )
+b1001101 0
+b1 2
+1$
+#40
+0$
+#45
+1$
+#50
+0$
+#55
+1$
+#60
+b10 1
+0$
+b10 &
+b10 *
+#65
+b1001101001000 !
+b1001101001000 )
+b1001101001000 0
+b10 2
+1$
+#70
+0$
+#75
+1$
+#80
+0$
+#85
+1$
+#90
+b11 1
+0$
+b11 &
+b11 *
+#95
+b1001101 !
+b1001101 )
+b1001101 0
+b11 2
+1$
+#100
+0$
+#105
+1$
+#110
+0$
+#115
+1$
+#120
+b100 1
+0$
+b100 &
+b100 *
+#125
+b1001101001000 !
+b1001101001000 )
+b1001101001000 0
+b100 2
+1$
+#130
+0$
+#135
+1$
+#140
+0$
+#145
+1$
+#150
+0$
+#155
+1$
+#160
+0$
+#165
+1$
+#170
+0$
+#175
+1$
+#180
+0$
+#185
+1$
+#190
+0$
+#195
+1$
+#200
+0$

@@ -1,0 +1,69 @@
+module odin_modul_dlya_vsego(clk_50MHz, res, out_state);
+
+localparam RED = 0, YELLOW1 = 1, GREEN = 2, YELLOW2 = 3;
+
+input clk_50MHz, res;
+
+output [1:0] out_state;
+
+reg [1:0] state, next_state;
+reg [63:0]          txstate;
+reg                 clk_1Hz; //Частота 1Гц 
+reg [5:0] 			   cnt1; //Счетчика для получения секунды
+reg [5:0]              cnt2; //Счетчик секунд
+
+always @(state) //Блок для текстового вывода состояний в tb
+	case (state)
+		RED     : txstate = "RED";
+		YELLOW1 : txstate = "YELLOW";
+		GREEN   : txstate = "GREEN";
+		YELLOW2 : txstate = "YELLOW2";
+	endcase
+
+always @(posedge clk_50MHz, negedge res) //Блок для получения 1 секунды
+if (!res) 
+	begin
+		cnt1 <= 0;
+		clk_1Hz <= 0;
+	end
+else if (cnt1 == 25)
+	begin
+		cnt1 <= 0;
+		clk_1Hz <= ~clk_1Hz;
+	end
+else 
+		cnt1 = cnt1 + 1'b1; 
+
+//Условие для сброса счетчика секунд
+wire res_cnt = (state == RED && cnt2 == 40) || ((state == YELLOW1 || state == YELLOW2) && cnt2 == 3) || ((state == GREEN) && cnt2 == 21);
+
+always @(posedge clk_1Hz, negedge res) //Счетчик секунд
+begin
+if (!res)
+ 	cnt2 <= 0;
+else if (res_cnt)
+    cnt2 <= 0;
+else 
+	cnt2 <= cnt2 + 1;
+	
+end
+
+always @(*)                    //Логика автомата
+	case(state)
+		RED     : next_state = (cnt2 == 40) ? YELLOW1 : RED;
+		YELLOW1 : next_state = (cnt2 == 3) ? GREEN : YELLOW1;
+		GREEN   : next_state = (cnt2 ==21) ? YELLOW2 : GREEN;
+		YELLOW2 : next_state = (cnt2 ==3) ? RED : YELLOW2;
+	endcase
+		
+always @(posedge clk_1Hz, negedge res) 
+begin
+if (!res)
+ 	state <= RED;
+else
+	state <= next_state;
+end
+
+assign out_state = state; //Вывод состояния в top_module
+
+endmodule
