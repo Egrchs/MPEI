@@ -1,0 +1,12 @@
+`timescale 1ns / 1ps
+module mux_cont(
+    input [3:0] a,
+    input [3:0] b,
+    input [3:0] c,
+    input [3:0] d,
+    input s1,
+    input s2,
+    output [3:0] y
+    );
+    assign y = (s2)?(s1?d:c):(s1?b:a);
+endmodule

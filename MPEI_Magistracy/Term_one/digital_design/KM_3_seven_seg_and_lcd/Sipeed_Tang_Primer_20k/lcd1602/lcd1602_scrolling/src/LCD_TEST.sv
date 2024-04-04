@@ -4,7 +4,6 @@ module LCD_TEST
 	input	logic			irst,
 	output	logic	[7:0]	LCD_DATA,
 	output	logic			LCD_RW,
-	// output	logic			LCD_EN,
 	output	logic			LCD_RS,
 	output	logic			LCD_EN
 );

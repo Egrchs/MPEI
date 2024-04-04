@@ -1,7 +1,7 @@
-Reading netlist file: "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\gwsynthesis\fpga_project.vg"
-Parsing netlist file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\gwsynthesis\fpga_project.vg" completed
+Reading netlist file: "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\gwsynthesis\fpga_project.vg"
+Parsing netlist file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\gwsynthesis\fpga_project.vg" completed
 Processing netlist completed
-Reading constraint file: "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\src\fpga_project.cst"
+Reading constraint file: "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\src\fpga_project.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -20,10 +20,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\pnr\fpga_project.power.html" completed
-Generate file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\pnr\fpga_project.pin.html" completed
-Generate file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\pnr\fpga_project.rpt.html" completed
-Generate file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\pnr\fpga_project.rpt.txt" completed
-Generate file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\pnr\fpga_project.tr.html" completed
-Thu Dec 21 21:46:52 2023
+Generate file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\pnr\fpga_project.power.html" completed
+Generate file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\pnr\fpga_project.pin.html" completed
+Generate file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\pnr\fpga_project.rpt.html" completed
+Generate file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\pnr\fpga_project.rpt.txt" completed
+Generate file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\lcd1602\lcd1602_scrolling\impl\pnr\fpga_project.tr.html" completed
+Thu Mar 21 15:48:14 2024
 

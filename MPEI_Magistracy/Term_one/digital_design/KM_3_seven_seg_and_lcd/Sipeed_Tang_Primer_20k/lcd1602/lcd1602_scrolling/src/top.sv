@@ -31,30 +31,30 @@ module top
 
     assign rst_n = ~rst;
 
-//	LCD_TEST u0 
-//	(
-//		.iclk    ( clk_27   ),
-//		.irst    ( rst_n    ),
-//		.LCD_DATA( LCD_DATA ),
-//		.LCD_RW  ( LCD_RW   ),
-//		.LCD_EN  ( LCD_EN   ),
-//		.LCD_RS  ( LCD_RS   )
-//	);
-
-	LCD_TEST_4 
-    #(
-        .w_key   ( w_tm_key)  // The last key is used for a reset
-    )
-    u1
+	LCD_TEST u0 
 	(
 		.iclk    ( clk_27   ),
 		.irst    ( rst_n    ),
 		.LCD_DATA( LCD_DATA ),
 		.LCD_RW  ( LCD_RW   ),
 		.LCD_EN  ( LCD_EN   ),
-		.LCD_RS  ( LCD_RS   ),
-        .key     ( tm_key_w )
+		.LCD_RS  ( LCD_RS   )
 	);
+
+//	LCD_TEST_4 
+//    #(
+//        .w_key   ( w_tm_key)  // The last key is used for a reset
+//    )
+//    u1
+//	(
+//		.iclk    ( clk_27   ),
+//		.irst    ( rst_n    ),
+//		.LCD_DATA( LCD_DATA ),
+//		.LCD_RW  ( LCD_RW   ),
+//		.LCD_EN  ( LCD_EN   ),
+//		.LCD_RS  ( LCD_RS   ),
+//        .key     ( tm_key_w )
+//	);
 
     //------------------------------------------------------------------------
 

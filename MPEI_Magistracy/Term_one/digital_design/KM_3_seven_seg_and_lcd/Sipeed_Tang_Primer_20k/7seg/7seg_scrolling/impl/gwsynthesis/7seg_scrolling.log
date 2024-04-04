@@ -1,28 +1,28 @@
 GowinSynthesis start
 Running parser ...
-Analyzing Verilog file 'D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\clk_div.sv'
-Analyzing Verilog file 'D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\sev_seg.sv'
-Analyzing Verilog file 'D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\shifter.sv'
-Analyzing Verilog file 'D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv'
-Analyzing Verilog file 'D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv'
-Undeclared symbol 'rst_n', assumed default net type 'wire'("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv":25)
-Compiling module 'top'("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv":1)
-Compiling module 'clk_div'("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\clk_div.sv":1)
-Compiling module 'shifter'("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\shifter.sv":1)
-Compiling module 'sev_seg(w_key=8)'("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\sev_seg.sv":1)
-Extracting RAM for identifier 'data'("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\sev_seg.sv":22)
-Compiling module 'tm1638_board_controller'("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":218)
-Compiling module 'tm1638_sio'("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":475)
-WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":538)
-WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":547)
-WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":558)
-WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":455)
-WARN  (EX3791) : Expression size 21 truncated to fit in target size 20("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":465)
-WARN  (EX1998) : Net 'tm_led[7]' does not have a driver("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv":15)
+Analyzing Verilog file 'D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\clk_div.sv'
+Analyzing Verilog file 'D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\sev_seg.sv'
+Analyzing Verilog file 'D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\shifter.sv'
+Analyzing Verilog file 'D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv'
+Analyzing Verilog file 'D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv'
+Undeclared symbol 'rst_n', assumed default net type 'wire'("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv":25)
+Compiling module 'top'("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv":1)
+Compiling module 'clk_div'("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\clk_div.sv":1)
+Compiling module 'shifter'("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\shifter.sv":1)
+Compiling module 'sev_seg(w_key=8)'("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\sev_seg.sv":1)
+Extracting RAM for identifier 'data'("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\sev_seg.sv":22)
+Compiling module 'tm1638_board_controller'("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":218)
+Compiling module 'tm1638_sio'("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":475)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":538)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":547)
+WARN  (EX3791) : Expression size 4 truncated to fit in target size 3("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":558)
+WARN  (EX3791) : Expression size 7 truncated to fit in target size 6("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":455)
+WARN  (EX3791) : Expression size 21 truncated to fit in target size 20("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\tm1638_board.sv":465)
+WARN  (EX1998) : Net 'tm_led[7]' does not have a driver("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv":15)
 NOTE  (EX0101) : Current top module is "top"
 [5%] Running netlist conversion ...
-WARN  (CV0021) : Inout GPIO_0[7:4] is unused("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv":9)
-WARN  (CV0019) : Inout GPIO_0[0] is unused("D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv":9)
+WARN  (CV0021) : Inout GPIO_0[7:4] is unused("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv":9)
+WARN  (CV0019) : Inout GPIO_0[0] is unused("D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\top.sv":9)
 Running device independent optimization ...
 [10%] Optimizing Phase 0 completed
 [15%] Optimizing Phase 1 completed
@@ -38,6 +38,6 @@ Running technical mapping ...
 [75%] Tech-Mapping Phase 2 completed
 [80%] Tech-Mapping Phase 3 completed
 [90%] Tech-Mapping Phase 4 completed
-[95%] Generate netlist file "D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\impl\gwsynthesis\7seg_scrolling.vg" completed
-[100%] Generate report file "D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\impl\gwsynthesis\7seg_scrolling_syn.rpt.html" completed
+[95%] Generate netlist file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\impl\gwsynthesis\7seg_scrolling.vg" completed
+[100%] Generate report file "D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\impl\gwsynthesis\7seg_scrolling_syn.rpt.html" completed
 GowinSynthesis finish

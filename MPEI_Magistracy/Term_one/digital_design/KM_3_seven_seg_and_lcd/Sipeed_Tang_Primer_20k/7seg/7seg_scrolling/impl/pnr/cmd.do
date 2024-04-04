@@ -1,11 +1,12 @@
--d D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\impl\gwsynthesis\7seg_scrolling.vg
+-d D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\impl\gwsynthesis\7seg_scrolling.vg
 -p GW2A-18C-PBGA256-8
 -pn GW2A-LV18PG256C8/I7
--cst D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\fpga_project.cst
--cfg D:\repos\MPEI\MPEI_Magistracy\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\impl\pnr\device.cfg
+-cst D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\src\fpga_project.cst
+-cfg D:\repos\MPEI_repos\MPEI\MPEI_Magistracy\Term_one\digital_design\KM_3_seven_seg_and_lcd\Sipeed_Tang_Primer_20k\7seg\7seg_scrolling\impl\pnr\device.cfg
 -bit
 -tr
 -ph
 -timing
 -cst_error
+-correct_hold 1
 -route_maxfan 23

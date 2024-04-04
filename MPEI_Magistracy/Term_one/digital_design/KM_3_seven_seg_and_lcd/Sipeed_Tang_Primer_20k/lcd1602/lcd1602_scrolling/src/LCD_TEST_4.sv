@@ -1,6 +1,6 @@
 module LCD_TEST_4 
 #( 
-    parameter w_key
+    parameter w_key = 8
 )
 (
 	input	logic			      iclk,

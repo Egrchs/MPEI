@@ -1,15 +1,16 @@
 {
+ "Device" : "",
  "Files" : [
   {
-   "Path" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_4_UART_rx/src/dumpy.sv",
+   "Path" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_4_UART_rx/src/dumpy.sv",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_4_UART_rx/src/lcd1602.sv",
+   "Path" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_4_UART_rx/src/lcd1602.sv",
    "Type" : "verilog"
   },
   {
-   "Path" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_4_UART_rx/src/uart_rx.sv",
+   "Path" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_4_UART_rx/src/uart_rx.sv",
    "Type" : "verilog"
   }
  ],
@@ -17,7 +18,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_4_UART_rx/impl/temp/rtl_parser.result",
+ "ResultFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_4_UART_rx/impl/temp/rtl_parser.result",
  "Top" : "uart_rx",
  "VerilogStd" : "sysv",
  "VhdlStd" : "vhdl_2008"

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Module name="top">
-    <SubModule name="clk_div_U" Register="26" Lut="48"/>
-    <SubModule name="shifter_U" Register="28" Lut="49"/>
-    <SubModule name="sev_seg_U" Register="20" Alu="4" Lut="20"/>
-    <SubModule name="i_tm1638" Register="21" Alu="5" Lut="60">
-        <SubModule name="tm1638_sio" Register="21" Lut="36"/>
-    </SubModule>
+ <SubModule name="clk_div_U" Register="26" Lut="48"/>
+ <SubModule name="shifter_U" Register="28" Lut="49"/>
+ <SubModule name="sev_seg_U" Register="20" Alu="4" Lut="20"/>
+ <SubModule name="i_tm1638" Register="21" Alu="5" Lut="59">
+  <SubModule name="tm1638_sio" Register="21" Lut="36"/>
+ </SubModule>
 </Module>

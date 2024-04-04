@@ -1,41 +1,41 @@
 [
  {
-  "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/LCD_TEST.sv",
+  "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/LCD_TEST_4.sv",
   "InstLine" : 1,
-  "InstName" : "LCD_TEST",
-  "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/LCD_TEST.sv",
+  "InstName" : "LCD_TEST_4",
+  "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/LCD_TEST_4.sv",
   "ModuleLine" : 1,
-  "ModuleName" : "LCD_TEST"
+  "ModuleName" : "LCD_TEST_4"
  },
  {
-  "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/top.sv",
+  "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/top.sv",
   "InstLine" : 1,
   "InstName" : "top",
-  "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/top.sv",
+  "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/top.sv",
   "ModuleLine" : 1,
   "ModuleName" : "top",
   "SubInsts" : [
    {
-    "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/top.sv",
-    "InstLine" : 48,
-    "InstName" : "u1",
-    "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/LCD_TEST_4.sv",
+    "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/top.sv",
+    "InstLine" : 34,
+    "InstName" : "u0",
+    "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/LCD_TEST.sv",
     "ModuleLine" : 1,
-    "ModuleName" : "LCD_TEST_4"
+    "ModuleName" : "LCD_TEST"
    },
    {
-    "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/top.sv",
+    "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/top.sv",
     "InstLine" : 78,
     "InstName" : "i_tm1638",
-    "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/tm1638_board.sv",
+    "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/tm1638_board.sv",
     "ModuleLine" : 218,
     "ModuleName" : "tm1638_board_controller",
     "SubInsts" : [
      {
-      "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/tm1638_board.sv",
+      "InstFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/tm1638_board.sv",
       "InstLine" : 290,
       "InstName" : "tm1638_sio",
-      "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/tm1638_board.sv",
+      "ModuleFile" : "D:/repos/MPEI_repos/MPEI/MPEI_Magistracy/Term_one/digital_design/KM_3_seven_seg_and_lcd/Sipeed_Tang_Primer_20k/lcd1602/lcd1602_scrolling/src/tm1638_board.sv",
       "ModuleLine" : 475,
       "ModuleName" : "tm1638_sio"
      }
