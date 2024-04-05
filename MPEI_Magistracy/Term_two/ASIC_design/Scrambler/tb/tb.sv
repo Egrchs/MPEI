@@ -1,8 +1,8 @@
-`include"top.sv"
-`include"scrambler.sv"
-`include"descrambler.sv"
 `timescale 1ns/1ps //Simulation time unit 1ns, simulation time precision 1ps
-module top_tb();
+
+`define WAVES_FILE "dump/wave.vcd"
+
+module tb();
 
 // signal declaration
 logic clk;
@@ -42,12 +42,9 @@ initial
   end
 
 initial begin
-    $dumpfile("top.vcd");
+    $dumpfile(`WAVES_FILE);
     $dumpvars;
-    #1000
-    $finish();
+    #1000 $finish();
 end
-
-
 
 endmodule
