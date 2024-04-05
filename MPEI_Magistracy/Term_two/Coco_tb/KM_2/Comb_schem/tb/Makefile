@@ -13,6 +13,7 @@ TOPLEVEL_LANG ?= verilog
 ### SOURCES for 4 mark
 # VERILOG_SOURCES += ../src/four_bit_adder.v
 # VERILOG_SOURCES += ../src/seven.v
+# VERILOG_SOURCES += ../src/mul/mul.v ../src/mul/fa.v ../src/mul/rca.v
 
 ### SOURCES for 5 mark
 # VERILOG_SOURCES += ../src/x2b.v
@@ -31,8 +32,9 @@ TOPLEVEL_LANG ?= verilog
 # TOPLEVEL = OAI21X1
 
 ### HDL for 4 mark
-# TOPMODULE = seven
-# TOPMODULE = four_bit_adder
+# TOPLEVEL = seven
+# TOPLEVEL = four_bit_adder
+# TOPLEVEL = mul
 
 ### HDL for 5 mark
 # TOPLEVEL = x2b
@@ -44,13 +46,14 @@ TOPLEVEL_LANG ?= verilog
 # MODULE = tests_HAX1_factory
 # MODULE = tests_NOR3x1
 # MODULE = tests_OAI22X1
-# MODULE = tests4AND2x1
+# MODULE = tests4AND2X1
 # MODULE = tests4NOR2X1
 # MODULE = tests4OAI21X1
 
 ### Tests for 4 mark
 # MODULE = tests_seven
 # MODULE = tests_adder
+# MODULE = tests_mul
 
 ### Tests for 5 mark
 # MODULE = tests_x2b
