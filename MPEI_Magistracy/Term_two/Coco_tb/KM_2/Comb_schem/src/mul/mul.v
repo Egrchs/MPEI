@@ -1,6 +1,4 @@
 `timescale 1ns / 1ps
-`include"rca.v"
-`include"fa.v"
 module mul(
     input [3:0] in1,
     input [3:0] in2,
