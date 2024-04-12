@@ -1,23 +1,22 @@
 module scrambler
 (
-	input  logic   clk,
-	input  logic   rst,
-	input  logic   bit_in,
-	output logic   bit_out
+	input  logic   CLK_I,
+	input  logic   RST_N_I,
+	input  logic   BIT_I,
+	output logic   BIT_O
 );
-	logic       feedback;
-	logic [9:0] q;
+	logic        feedback;
+	logic [11:0] q;
 
-	assign feedback =  (q[8] ^ q[2] ^ q[0]);
+	assign feedback =  (q[10] ^ q[3] ^ q[0]);
+	assign BIT_O    = feedback ^ BIT_I;
 
-	assign bit_out  = feedback ^ bit_in;
-
-	always_ff @(posedge clk or negedge rst) begin
-		if (!rst) begin
-			q <=  10'b00_1001_0110;
+	always_ff @(posedge CLK_I, negedge RST_N_I) begin
+		if (!RST_N_I) begin
+			q <=  12'b0001_0100_1101;
 		end 
 		else begin
-			q <= {feedback,q[9:1]};
+			q <= {feedback, q[11:1]};
 		end
 	end
 

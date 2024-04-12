@@ -1,32 +1,32 @@
 module top  
 (
-    input  logic  clk,
-    input  logic  rst,
-    input  logic  bit_in,
-    output logic  bit_out
+    input  logic  CLK_I,
+    input  logic  RST_N_I,
+    input  logic  BIT_I,
+    output logic  BIT_O
 );
 
     logic a1;
     logic a2;
 
-    assign bit_out = a2;
+    assign BIT_O = a2;
 
     scrambler 
     scrambler_inst
     (
-        .clk     (clk   ),
-        .rst     (rst   ),
-        .bit_in  (bit_in),
-        .bit_out (a1    )
+        .CLK_I     (CLK_I   ),
+        .RST_N_I   (RST_N_I ),
+        .BIT_I     (BIT_I   ),
+        .BIT_O     (a1      )
     );
 
-    descrambler
+    scrambler 
     descrambler_inst
     (
-        .clk    (clk),
-        .rst    (rst),
-        .bit_in (a1 ),
-        .bit_out(a2 )
+        .CLK_I    (CLK_I   ),
+        .RST_N_I  (RST_N_I ),
+        .BIT_I    (a1      ),
+        .BIT_O    (a2      )
     );
 
 endmodule

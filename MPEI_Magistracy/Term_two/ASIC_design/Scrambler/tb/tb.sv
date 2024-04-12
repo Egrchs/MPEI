@@ -4,47 +4,44 @@
 
 module tb();
 
-// signal declaration
-logic clk;
-logic rst;
-logic bit_in;
-logic bit_out;
+  // signal declaration
+  logic clk_i;
+  logic rst_n_i;
+  logic bit_i;
+  logic bit_o;
 
-//Module instantiation (just connect the declared signals)
-top U(
-    .clk (clk),
-    .rst (rst),
-    .bit_in (bit_in),
-    .bit_out (bit_out)
-    );
+  //Module instantiation (just connect the declared signals)
+  top U(
+      .CLK_I     ( clk_i   ),
+      .RST_N_I   ( rst_n_i ),
+      .BIT_I     ( bit_i   ),
+      .BIT_O     ( bit_o   )
+      );
 
-always #5 clk = ~clk; //generate clock signal
+  always #5 clk_i = ~clk_i; //generate clock signal
 
-// assign value to input data
-initial begin
-    clk = 1;
-    rst = 1;
-    #10 rst = 0;
-    #5 rst = 1;
-end
-
-localparam [0 : 10] a        = 11'b1010_0000_101;
-
-initial
-  begin
-    @ (negedge rst);
-
-    for (int i = 0; i < 11; i ++)
-    begin
-      @ (posedge clk);
-      bit_in <= a [i];
-   end
+  // assign value to input data
+  initial begin
+      clk_i       = 1;
+      rst_n_i     = 1;
+      #10 rst_n_i = 0;
+      #5 rst_n_i  = 1;
   end
 
-initial begin
-    $dumpfile(`WAVES_FILE);
-    $dumpvars;
-    #1000 $finish();
-end
+localparam [0 : 12] a        = 13'b1_0100_0000_1001;
+
+  initial begin
+    @(negedge rst_n_i);
+    for (int i = 0; i < 11; i ++) begin
+      @ (posedge clk_i);
+      bit_i <= a [i];
+    end
+  end
+  
+  initial begin
+      $dumpfile(`WAVES_FILE);
+      $dumpvars;
+      #1000 $finish();
+  end
 
 endmodule
