@@ -1,9 +1,6 @@
 # Директория с RTL
-# VERILOG_DIRS = ../src
-# $(info VERILOG_DIRS  = $(VERILOG_DIRS))
-
-# RTL_FILEPATHS = $(foreach dir, $(VERILOG_DIRS), $(wildcard $(addprefix $(dir)/*,*.v)))
-# $(info RTL_FILEPATHS = $(RTL_FILEPATHS))
+VERILOG_DIRS = ../src
+RTL_FILEPATHS = $(foreach dir, $(VERILOG_DIRS), $(wildcard $(addprefix $(dir)/*,*.v)))
 
 # Выбор симулятора
 SIM ?= icarus
@@ -12,7 +9,7 @@ SIM ?= icarus
 TOPLEVEL_LANG ?= verilog
 
 # Расположение файла с исходниками
-VERILOG_SOURCES += ../src/Bus.v
+VERILOG_SOURCES += ${RTL_FILEPATHS}
 
 # Имя модуля верхнего уровня в RTL-описании
 TOPLEVEL = Bus
