@@ -46,7 +46,7 @@ always_ff @(posedge wclk or negedge wrst_n) begin
     wfull  <= 1'b0;
   end else begin
     awfull <= awfull_val;
-  wfull  <= wfull_val;
+    wfull  <= wfull_val;
     end
 end
 endmodule

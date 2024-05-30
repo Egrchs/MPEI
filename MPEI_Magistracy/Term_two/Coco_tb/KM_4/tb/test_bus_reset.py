@@ -4,17 +4,17 @@ from cocotb.clock import Clock
 from cocotb.triggers import ClockCycles, FallingEdge
 
 outputs_model = {
-'gnt1'          :     'x',
-'gnt2'          :     'x',
-'sb_masters'    :   2*'x',
-'sb_mastlock'   :     'x',
-'RDATA'         :  32*'z',
-'HADDR'         :  14*'z',
-'sel_0'         :  0b1   ,
-'sel_1'         :     'x',
-'sel_2'         :     'x',
-'sel_slave'     :  0b0   ,
-'WDATA'         :  32*'z',
+    'gnt1'          :     'x',
+    'gnt2'          :     'x',
+    'sb_masters'    :   2*'x',
+    'sb_mastlock'   :     'x',
+    'RDATA'         :  32*'z',
+    'HADDR'         :  14*'z',
+    'sel_0'         :  0b1   ,
+    'sel_1'         :     'x',
+    'sel_2'         :     'x',
+    'sel_slave'     :  0b0   ,
+    'WDATA'         :  32*'z',
 }
 
 outputs_result = outputs_model.copy()

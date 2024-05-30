@@ -1,12 +1,11 @@
 module top 
 #(
     parameter   DATASIZE = 8,    // Ширина слова
-                ADDRSIZE = 4,    // Количество бит адреса
-                ASIZE    = 4
+                ADDRSIZE = 4    // Количество бит адреса
 ) 
 (
     input  logic [DATASIZE - 1 : 0] WDATA_I,   
-    input  logic                    WFULL_IO,   
+    output logic                    WFULL_O,   
     input  logic                    WINC_I,      
     input  logic                    WCLK_I,         
     input  logic                    WRST_N_I,          
@@ -30,7 +29,8 @@ module top
 
     always_comb begin
         wclken_w = !wfull_w  & WINC_I;
-        rclken_w = !REMPTY_O & RINC_I;
+        rclken_w = REMPTY_O & RINC_I;
+        WFULL_O  = wfull_w;
     end 
     
     fifo_mem
