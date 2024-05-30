@@ -2,17 +2,18 @@ module TOP_CRC#(
 	parameter WIDTH = 32
    )
    (
-    input  logic                   clk,
-    input  logic                   rst,
-    input  logic [WIDTH-1:0]       data,
+  input  logic                   clk,
+  input  logic                   rst,
+  input  logic [WIDTH-1:0]       data,
+  input  logic [WIDTH-1:0]       data_1,
 	input  logic [WIDTH  :0]       polynom_i,
-    input  logic                   rd,
-    output logic [WIDTH-1:0]       CRC,
+  input  logic                   rd,
+  output logic [WIDTH-1:0]       CRC,
 	output logic [WIDTH-1:0]       CRC_pro,
 	output logic                   OK,
 	output logic                   rd_pro,
 	output logic                   out_ready_PRO,
-    output logic                   out_ready_CRC
+  output logic                   out_ready_CRC
   );
 	
 //	logic rd_pro;
@@ -26,23 +27,23 @@ module TOP_CRC#(
   logic [32:0]    reg_xor; //результат "вычитания" полиномов
   
   crc32 #(WIDTH) uut0 (
-.clk(clk),
-.rst(rst),
-.data(data),
-.polynom_i(polynom_i),
-.rd(rd),
-.CRC(CRC),
+.clk          (clk          ),
+.rst          (rst          ),
+.data         (data_1       ),
+.polynom_i    (polynom_i    ),
+.rd           (rd           ),
+.CRC          (CRC          ),
 .out_ready_CRC(out_ready_CRC)
 );
 
-crc32_pro  uut1 (
-.clk(clk),
-.rst(rst),
-.data(data),
-
-.rd(rd_pro),
-.CRC_IN(CRC),
-.CRC(CRC_pro),
+crc32_pro #(WIDTH) uut1 (
+.clk          (clk          ),
+.rst          (rst          ),
+.data         (data         ),
+.polynom_i    (polynom_i    ),
+.rd           (rd_pro       ),
+.CRC_IN       (CRC          ),
+.CRC          (CRC_pro      ),
 .out_ready_CRC(out_ready_PRO)
 );
   

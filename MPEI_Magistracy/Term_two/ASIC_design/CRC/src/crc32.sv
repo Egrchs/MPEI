@@ -18,8 +18,10 @@ module crc32 #(
   logic                    ready_CRC;
   logic [WIDTH        :0]  shifter;    //сдвиг результата "вычитания" полиномов, если он был
   logic [WIDTH        :0]  reg_xor;    //результат "вычитания" полиномов
-  
+  logic [31:0] data1;
+
   always_comb begin
+    // data1 = 32'b01010110011011111000101101000111;
     CRC [WIDTH-1:0] = data_CRC [WIDTH-1:0];
     out_ready_CRC = ready_CRC;
   end

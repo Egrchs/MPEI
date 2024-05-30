@@ -1,65 +1,65 @@
-module crc32_pro
+module crc32_pro #(
+  parameter WIDTH = 32
+ )
 	(
-    input                   clk,
-    input                   rst,
-    input  [31:0]          data,
-	  input  [31:0]        CRC_IN,
-    input                    rd,
-    output [31:0]           CRC,
-    output        out_ready_CRC
+    input  logic                       clk,
+    input  logic                       rst,
+    input  logic  [WIDTH-1  :0]        data,
+	  input  logic  [WIDTH-1  :0]        CRC_IN,
+    input  logic  [WIDTH    :0]        polynom_i,
+    input  logic                       rd,
+    output logic  [WIDTH-1  :0]        CRC,
+    output logic                       out_ready_CRC
   );
   
-  
-  logic [31:0]   data_CRC;
-  logic [63:0]   ext_data; //что ты такое?
-  logic [32:0] polynomial; //generation polynom 
-  logic [5:0]         cnt; //counter
-  logic         ready_CRC;
-  logic [32:0]    shifter; //сдвиг результата "вычитания" полиномов, если он был
-  logic [32:0]    reg_xor; //результат "вычитания" полиномов
-  
-  logic [31:0] CRC_IN1;
+  logic [WIDTH-1      :0]  data_CRC;
+  logic [2*WIDTH-1    :0]  ext_data;   //что ты такое?
+  logic [WIDTH        :0]  polynomial; //generation polynom 
+  logic [$clog2(WIDTH):0]  cnt;        //counter
+  logic                    ready_CRC;
+  logic [WIDTH        :0]  shifter;    //сдвиг результата "вычитания" полиномов, если он был
+  logic [WIDTH        :0]  reg_xor;    //результат "вычитания" полиномов
+  logic [WIDTH-1      :0] CRC_IN1;
 
-
-  assign CRC [31:0] = data_CRC [31:0];
-  assign out_ready_CRC = ready_CRC;
-  
-  assign CRC_IN1[31:0] = CRC_IN[31:0];
-
-  
+  always_comb begin
+    CRC    [WIDTH-1:0] = data_CRC [WIDTH-1:0];
+    out_ready_CRC      = ready_CRC;
+    CRC_IN1[WIDTH-1:0] = CRC_IN[WIDTH-1:0];
+  end
+ 
   
   always_ff @(posedge clk or negedge rst) begin
   	if (!rst) begin
-      data_CRC [31:0]   <= {32{1'b0}};
-  		ext_data [63:0]   <= {64{1'b0}};
-  		shifter [32:0]    <= {33{1'b0}};
-  		polynomial [32:0] <= 33'h1_04C11DB7;
-		//polynomial [32:0] <= 33'b1011_1010_0000_1101_1100_0110_0110_1011_1;
-  		cnt [5:0]         <= 6'b000000;
-  		ready_CRC         <= 1'b0;
-		reg_xor <= '0;
+      data_CRC   [WIDTH-1:0]        <= {WIDTH{1'b0}};
+  		ext_data   [2*WIDTH-1:0]      <= {2*WIDTH{1'b0}};
+  		shifter    [WIDTH:0]          <= {(WIDTH+1){1'b0}};
+  		polynomial [WIDTH:0]          <= polynom_i;
+  		cnt        [$clog2(WIDTH):0]  <= {($clog2(WIDTH)+1){1'b0}};
+  		ready_CRC                     <= 1'b0;
+		  reg_xor                       <= '0;
   	end
+    
   	else begin
-      if ( (!rd) && (cnt == 6'd32) ) begin
-        if ( shifter[32] ) begin
+      if ( (!rd) && (cnt == WIDTH) ) begin
+        if ( shifter[WIDTH] ) begin
           shifter       <= shifter ^ polynomial;
         end
   			ready_CRC       <= 1'b1;
-        data_CRC [31:0] <= shifter[31:0];
+        data_CRC [WIDTH-1:0] <= shifter[WIDTH-1:0];
   		end
-      else if ( (!rd) && (cnt < 6'd32) ) begin
-        if ( shifter [32] == 1'b1) begin
-          reg_xor       = shifter ^ polynomial;
-			 shifter         = {reg_xor[31:0], ext_data[31]};
+      else if ( (!rd) && (cnt < WIDTH) ) begin
+        if ( shifter [WIDTH] == 1'b1) begin
+          reg_xor        = shifter ^ polynomial;
+			    shifter        =  {reg_xor[WIDTH-1:0], ext_data[WIDTH-1]};
         end else begin
-			 shifter         <= {shifter[31:0], ext_data[31]};
-		  end
+			    shifter       <= {shifter[WIDTH-1:0], ext_data[WIDTH-1]};
+		    end
   			cnt             <= cnt + 1'b1;
-  			ext_data        <= {ext_data[62:0], 1'b0};
+  			ext_data        <= {ext_data[2*WIDTH-2:0], 1'b0};
   		end
   		else if (rd) begin
-  			shifter [32:0]  <= {data[31:0],1'b0};
-  			ext_data [63:0] <= {data[31:0], CRC_IN[31:0]}; //32'hFFAA0F9D}; //CRC_IN[31:0]};
+  			shifter [32:0]  <= {data[WIDTH-1:0],1'b0};
+  			ext_data [63:0] <= {data[WIDTH-1:0], CRC_IN[31:0]}; //32'hFFAA0F9D}; //CRC_IN[31:0]};
   		end
   	end
   end
