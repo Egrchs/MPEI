@@ -1,4 +1,4 @@
-module TOP_CRC#(
+module top#(
 	parameter WIDTH = 32
    )
    (

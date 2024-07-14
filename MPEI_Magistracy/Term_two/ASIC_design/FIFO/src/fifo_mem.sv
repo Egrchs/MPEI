@@ -33,4 +33,12 @@ module fifo_mem
     
   assign rdata = rdata_r;
 
+  genvar idx;
+  generate
+    for (idx = 0; idx < 16; idx++) begin : dich
+        logic [7:0] tmp;
+        assign tmp = mem[idx];
+    end
+  endgenerate
+
 endmodule

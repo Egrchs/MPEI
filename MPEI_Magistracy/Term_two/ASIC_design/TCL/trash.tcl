@@ -4,10 +4,13 @@
 
 puts "What is your lastname?"
 set lastname [gets stdin]
+puts " "
 puts "What is your name?"
 set firstname [gets stdin]
+puts " "
 puts "What is your middlename?"
 set middlename [gets stdin]
+puts " "
 set lst [concat $lastname $firstname $middlename]
 puts $lst
 puts " "
@@ -24,7 +27,7 @@ puts "w = b - c => w = $b - $c = $w"
 set z [expr $w*$d]
 puts "z = w * d => z = $w * $d = $z"
 set f [expr $a./$z]
-puts "f = a / z => f = $a / $z = $f"
+puts "f = a / z => f = $a / $z = [format "%.5f" $f]"
 puts " "
 
 #3.1 задание 
@@ -84,7 +87,7 @@ for {set i 0} {$i < [llength $sorted_array]} {incr i} {
 	}
 }
 
-puts "Отсортированный писок типов:"
+puts "Отсортированный список типов:"
 puts $sorted_array
 
 array set array2 [list \

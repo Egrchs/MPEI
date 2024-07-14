@@ -5,14 +5,15 @@ module top
 ) 
 (
     input  logic [DATASIZE - 1 : 0] WDATA_I,   
-    output logic                    WFULL_O,   
     input  logic                    WINC_I,      
     input  logic                    WCLK_I,         
     input  logic                    WRST_N_I,          
     input  logic                    RINC_I,           
     input  logic                    RCLK_I,             
-    input  logic                    RRST_N_I,         
+    input  logic                    RRST_N_I,   
+
     output logic [DATASIZE - 1 : 0] RDATA_O,       
+    output logic                    WFULL_O,   
     output logic                    REMPTY_O,         
     output logic                    AREMPTY_O 
 );
@@ -29,7 +30,6 @@ module top
 
     always_comb begin
         wclken_w = !wfull_w  & WINC_I;
-        rclken_w = REMPTY_O & RINC_I;
         WFULL_O  = wfull_w;
     end 
     
@@ -46,7 +46,7 @@ module top
         .wdata    ( WDATA_I    ),
         .wfull    ( wfull_w    ),
         .rclk     ( RCLK_I     ),
-        .rclken   ( rclken_w   ),
+        .rclken   ( RINC_I     ),
         .raddr    ( raddr_w    ),
         .rdata    ( RDATA_O    )
     );

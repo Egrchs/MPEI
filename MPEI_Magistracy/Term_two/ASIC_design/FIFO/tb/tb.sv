@@ -1,3 +1,4 @@
+`timescale 1ps/1ps
 `define WAVES_FILE "dump/wave.vcd"
 
 import fifo_sim_pkg::*;
@@ -28,6 +29,9 @@ module tb #(
     int wrst_time;
     int rrst_time;
     int cnt_data_send;
+    int cnt_data_rec;
+
+    int timeout;
 
     // PLUSARGS
     int TGL_WRST_N = 1;
@@ -37,6 +41,9 @@ module tb #(
 
     logic [DATASIZE - 1 : 0] wr_data_q [$];
     logic [DATASIZE - 1 : 0] rd_data_q [$];
+
+    logic [DATASIZE-1:0] mem_tb [0:DEPT_FIFO-1];
+
 
     top 
     #(
@@ -60,11 +67,10 @@ module tb #(
     
     initial begin
         wdata_i   = 0;   
-        winc_i    = 0;   
+        winc_i    = 1;   
         wclk_i    = 0;   
         rinc_i    = 0;   
         rclk_i    = 0;   
-        winc_i    = 0;
         rinc_i    = 0;
     end
 
@@ -75,6 +81,7 @@ module tb #(
     endtask
 
     task gen_clk_wr();
+        #10
         forever begin
             #(CLK_WR_PERIOD / 2.0) wclk_i = ~wclk_i; //generate clk_wr signal
         end
@@ -136,16 +143,16 @@ module tb #(
 
     task rd_data();
         forever @(posedge rclk_i) begin
-            rd_data_q.push_back(rdata_o);
-            $display("rd_data = %0d ", rd_data_q.pop_front());
+            if(rinc_i) begin
+                cnt_data_rec++;
+            end
         end
     endtask
     
     task gen_data();
-        forever @(posedge wclk_i) begin
+        forever @(negedge wclk_i) begin
             wdata_i = $urandom_range(fifo_sim_pkg::min_data_val, fifo_sim_pkg::max_data_val);
-            // wr_data_q.push_back(wdata_i);
-            $display("wr_data == %0d", wdata_i);
+            wr_data_q.push_back(wdata_i);
             cnt_data_send++;
         end
     endtask
@@ -159,7 +166,6 @@ module tb #(
             gen_data();
             rd_data();
             en_test();
-            // check_data();
         join_none
     end
 
@@ -168,15 +174,21 @@ module tb #(
             case (TEST)
                 0 : begin
                     winc_i = 1;
-                    if(cnt_data_send == 5) begin
-                        winc_i = 0;
+                    rinc_i = 1;
+                end
+                1 : begin
+                    if(cnt_data_send == 10) begin
+                        // winc_i = 1;
                         rinc_i = 1;
-                        #500;
-                        rinc_i = 0;
                     end
+                    // if(cnt_data_rec == 5) begin
+                    //     rinc_i = 0;
+                    //     winc_i = 1;
+                    // end
                 end 
                 default: begin
-                $fatal;
+                    $error("INCORRECT TEST_TUPE ! ! ! ! !", TEST);
+                    $fatal;
                 end
             endcase
         end
@@ -185,6 +197,6 @@ module tb #(
     initial begin
         $dumpfile(`WAVES_FILE);
         $dumpvars;
-        #1000 $finish();
+        #10000 $finish();
     end
 endmodule
