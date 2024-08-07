@@ -14,8 +14,6 @@ if { [info exists fab] } {
         puts "   $$ |   $$\\   $$ |$$ |\\$  /$$ |$$ |  $$\\ "
         puts "   $$ |   \\$$$$$$  |$$ | \\_/ $$ |\\$$$$$$  |"
         puts "   \\__|    \\______/ \\__|     \\__| \\______/ "
-   
-        read_mmmc ${IP_DSOL_REUSE_LIB_DIR}/soft/tcl_scripts/genus/tsmc28hpcp.tcl 
     } elseif { ${fab} == "smic" } {
         puts "fab smic\n"
         puts " $$$$$$\\  $$\\      $$\\ $$$$$$\\  $$$$$$\\  "  
@@ -26,7 +24,6 @@ if { [info exists fab] } {
         puts "$$\\   $$ |$$ |\\$  /$$ |  $$ |  $$ |  $$\\ "  
         puts "\\$$$$$$  |$$ | \\_/ $$ |$$$$$$\\ \\$$$$$$  |"  
         puts " \\______/ \\__|     \\__|\\______| \\______/ "
-        source ${IP_DSOL_REUSE_LIB_DIR}/soft/tcl_scripts/genus/smic28hkcp.tcl -quiet
     } else {
         error "ERROR: wrong fab!"
     }
