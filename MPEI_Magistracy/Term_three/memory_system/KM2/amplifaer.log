@@ -5,8 +5,8 @@ WARNING: Node N002 is floating.
 WARNING: Less than two connections to node N002.  This node is used by M3.
 Direct Newton iteration for .op point succeeded.
 
-Date: Wed Oct 09 20:59:38 2024
-Total elapsed time: 0.205 seconds.
+Date: Wed Oct 09 22:24:18 2024
+Total elapsed time: 0.414 seconds.
 
 tnom = 27
 temp = 27
@@ -19,6 +19,6 @@ rejected = 0
 matrix size = 41
 fillins = 4
 solver = Normal
-Matrix Compiler1: 5.84 KB object code size  0.8/0.4/[0.3]
-Matrix Compiler2: 4.83 KB object code size  0.3/0.4/[0.3]
+Matrix Compiler1: 5.84 KB object code size  1.9/1.0/[0.8]
+Matrix Compiler2: 4.83 KB object code size  0.7/1.2/[0.7]
 
