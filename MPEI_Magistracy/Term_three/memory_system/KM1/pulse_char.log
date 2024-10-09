@@ -1,0 +1,31 @@
+Circuit: * C:\Users\begow\Desktop\all\repos\MPEI\MPEI_Magistracy\Term_three\memory_system\KM1\pulse_char.asc
+
+Direct Newton iteration for .op point succeeded.
+.step r=10000
+.step r=20000
+.step r=30000
+.step r=40000
+.step r=50000
+.step r=60000
+.step r=70000
+.step r=80000
+.step r=90000
+.step r=100000
+
+Date: Wed Oct 09 20:07:56 2024
+Total elapsed time: 0.317 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2022
+traniter = 2017
+tranpoints = 951
+accept = 848
+rejected = 103
+matrix size = 9
+fillins = 0
+solver = Normal
+Matrix Compiler1:      28 opcodes  0.1/0.1/[0.1]
+Matrix Compiler2: 735 bytes object code size  0.1/0.1/[0.1]
+
