@@ -1,0 +1,24 @@
+Circuit: * C:\Users\begow\Desktop\all\repos\MPEI\MPEI_Magistracy\Term_three\memory_system\KM3\row_amplifaer.asc
+
+WARNING: Node NC_01 is floating.
+
+WARNING: Less than two connections to node NC_01.  This node is used by M11.
+Direct Newton iteration for .op point succeeded.
+
+Date: Wed Oct 09 21:27:23 2024
+Total elapsed time: 0.185 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 1310
+traniter = 1283
+tranpoints = 519
+accept = 425
+rejected = 94
+matrix size = 54
+fillins = 0
+solver = Normal
+Matrix Compiler1: 7.46 KB object code size  1.1/0.5/[0.4]
+Matrix Compiler2: off  [0.4]/0.5/0.5
+
