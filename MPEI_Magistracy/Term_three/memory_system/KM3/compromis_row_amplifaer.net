@@ -1,0 +1,27 @@
+* C:\Users\begow\Desktop\memory_system\compromis_row_amplifaer.asc
+M1 N001 out_p N003 N003 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M2 N002 out_n N004 N004 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M3 out_n out_p vdd vdd PMOS l=130e-9 w=2600e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M6 out_p out_n vdd vdd PMOS l=130e-9 w=2600e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M4 out_p clk vdd vdd PMOS l=130e-9 w=2600e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M5 out_n clk vdd vdd PMOS l=130e-9 w=2600e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M8 N005 vdd vdd vdd PMOS l=130e-9 w=2600e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M9 N005 vdd 0 0 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M10 N006 0 vdd vdd PMOS l=130e-9 w=2600e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M11 N006 0 0 0 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+V§CLK clk 0 PULSE(0 1.5 0 1e-10 1e-10 1e-9 2e-9)
+M7 out_p clk N002 N002 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M12 out_n clk N001 N001 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M13 N004 0 0 0 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M14 N003 in_n 0 0 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+VDD vdd 0 1.5
+V1 in_p 0 0.75
+V2 in_n 0 1
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\begow\Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0 15e-9 0 1e-10
+.inc 130nm_bulk.pm
+.ic V(plus)=0.9 V(minus)=0.15
+.backanno
+.end
