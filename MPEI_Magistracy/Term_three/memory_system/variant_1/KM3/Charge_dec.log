@@ -1,0 +1,22 @@
+Circuit: * C:\Users\begow\Desktop\all\repos\MPEI\MPEI_Magistracy\Term_three\memory_system\variant_1\KM3\Charge_dec.asc
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Nov 07 02:56:15 2024
+Total elapsed time: 0.098 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 2046
+traniter = 2022
+tranpoints = 829
+accept = 746
+rejected = 83
+matrix size = 40
+fillins = 0
+solver = Normal
+Matrix Compiler1: 4.58 KB object code size  0.7/0.3/[0.3]
+Matrix Compiler2: off  [0.3]/0.4/0.4
+
