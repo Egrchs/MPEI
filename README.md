@@ -1,6 +1,6 @@
 ![logo](other_files/logo3.png)
 
-**В данном репозитории расположены файлы бакалаврской и магистерской программы кафедры Электроники и Наноэлектроники.**
+<i>В данном репозитории расположены файлы бакалаврской и магистерской программы кафедры Электроники и Наноэлектроники Московского Энергетического Института.</i>
 
 # [MPEI bachelor](https://github.com/Egrchs/MPEI/tree/development/MPEI_Bachelor)
 
@@ -21,4 +21,11 @@
 2. [KM_2_sorting_algorithms](https://github.com/Egrchs/mpei_magistracy/tree/development/computers_technology_on_scientific_research/KM_2_sorting_algorithms)
 3. [KM_3_search_algorithms](https://github.com/Egrchs/mpei_magistracy/tree/development/computers_technology_on_scientific_research/KM_3_search_algorithms)
 4. .....
-![logo](other_files/ein.png)
+
+## Education and useful matherials
+
+<a href="https://mpei.ru/Structure/Universe/ire/structure/se/Pages/default.aspx">
+    <center>
+        <img src="other_files/ein.png" width="300" height="300">
+    </center>
+</a>
