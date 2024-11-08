@@ -24,14 +24,8 @@
 
 ## [Education and useful materials](Edu_materials/)
 
-<p class="aligncenter">
+<center>
     <a href="https://mpei.ru/Structure/Universe/ire/structure/se/Pages/default.aspx">
         <img src="other_files/ein.png" width="300" height="300">
     </a>
-</p>
-
-<style>
-.aligncenter {
-    text-align: center;
-}
-</style>
+</center>
