@@ -22,10 +22,16 @@
 3. [KM_3_search_algorithms](https://github.com/Egrchs/mpei_magistracy/tree/development/computers_technology_on_scientific_research/KM_3_search_algorithms)
 4. .....
 
-## Education and useful matherials
+## [Education and useful materials](Edu_materials/)
 
-<a href="https://mpei.ru/Structure/Universe/ire/structure/se/Pages/default.aspx">
-    <center>
+<p class="aligncenter">
+    <a href="https://mpei.ru/Structure/Universe/ire/structure/se/Pages/default.aspx">
         <img src="other_files/ein.png" width="300" height="300">
-    </center>
-</a>
+    </a>
+</p>
+
+<style>
+.aligncenter {
+    text-align: center;
+}
+</style>
