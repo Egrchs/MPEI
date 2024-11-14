@@ -1,0 +1,23 @@
+Circuit: * C:\Users\begow\Desktop\all\repos\MPEI\MPEI_Magistracy\Term_three\memory_system\variant_1\KM3\decoder_amplifaer.asc
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Direct Newton iteration for .op point succeeded.
+
+Date: Thu Nov 14 03:46:01 2024
+Total elapsed time: 0.538 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 20292
+traniter = 20277
+tranpoints = 10069
+accept = 10066
+rejected = 3
+matrix size = 33
+fillins = 0
+solver = Normal
+Matrix Compiler1: 3.31 KB object code size  1.0/0.3/[0.2]
+Matrix Compiler2: 3.58 KB object code size  0.3/0.3/[0.2]
+

@@ -1,0 +1,9 @@
+Version 4
+SymbolType BLOCK
+RECTANGLE Normal 17 66 -81 -64
+PIN -80 -32 RIGHT 8
+PINATTR PinName WL
+PINATTR SpiceOrder 1
+PIN -80 16 RIGHT 8
+PINATTR PinName BL
+PINATTR SpiceOrder 2
