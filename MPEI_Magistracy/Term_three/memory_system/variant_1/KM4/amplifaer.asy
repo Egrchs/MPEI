@@ -1,6 +1,7 @@
 Version 4
 SymbolType BLOCK
 RECTANGLE Normal 16 160 -111 -64
+TEXT -78 -45 Left 2 amp
 PIN -112 32 RIGHT 8
 PINATTR PinName Eq
 PINATTR SpiceOrder 1
