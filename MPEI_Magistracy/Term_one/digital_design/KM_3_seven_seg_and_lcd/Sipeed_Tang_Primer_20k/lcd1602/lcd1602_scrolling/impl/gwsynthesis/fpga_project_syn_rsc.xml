@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Module name="top">
- <SubModule name="u0" Register="297" Lut="83"/>
- <SubModule name="i_tm1638" Register="17" Alu="5" Lut="33">
-  <SubModule name="tm1638_sio" Register="21" Lut="35"/>
- </SubModule>
-</Module>
