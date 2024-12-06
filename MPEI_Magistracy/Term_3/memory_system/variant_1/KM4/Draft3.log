@@ -1,0 +1,95 @@
+Circuit: * C:\Users\begow\Desktop\all\repos\MPEI\MPEI_Magistracy\Term_3\memory_system\variant_1\KM4\Draft3.asc
+
+WARNING: Node NC_01 is floating.
+WARNING: Node X4:N002 is floating.
+WARNING: Node X4:NC_01 is floating.
+WARNING: Node N012 is floating.
+WARNING: Node X5:N002 is floating.
+WARNING: Node X5:NC_01 is floating.
+WARNING: Node N014 is floating.
+WARNING: Node X6:N002 is floating.
+WARNING: Node X6:NC_01 is floating.
+
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+Gmin = 1.76685e-007
+vernier = 0.5
+Gmin = 2.96428e-008
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+Gmin = 2.55416e-008
+vernier = 0.0416667
+vernier = 0.0555555
+Gmin = 2.28504e-008
+vernier = 0.074074
+vernier = 0.0987653
+Gmin = 1.91653e-008
+vernier = 0.131687
+Gmin = 1.44282e-008
+vernier = 0.175583
+vernier = 0.23411
+Gmin = 9.10116e-009
+vernier = 0.312147
+vernier = 0.416196
+Gmin = 4.42793e-009
+vernier = 0.554928
+Gmin = 1.40978e-009
+vernier = 0.739903
+vernier = 0.986537
+Gmin = 2.30811e-010
+vernier = 1
+Gmin = 2.49844e-011
+Gmin = 2.68268e-012
+Gmin = 2.8805e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+Ignoring empty pin current: Ix(x4:in)
+Ignoring empty pin current: Ix(x5:in)
+Ignoring empty pin current: Ix(x6:in)
+Ignoring empty pin current: Ix(x4:in)
+Ignoring empty pin current: Ix(x5:in)
+Ignoring empty pin current: Ix(x6:in)
+
+Date: Fri Dec 06 21:07:53 2024
+Total elapsed time: 2.416 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 10602
+traniter = 9438
+tranpoints = 4105
+accept = 4077
+rejected = 28
+matrix size = 267
+fillins = 59
+solver = Normal
+Thread vector: 134.6/97.6[4] 32.0/21.2[4] 8.0/4.6[4] 2.0/2.5[1]  2592/500
+Matrix Compiler1: 38.76 KB object code size  21.0/7.3/[5.3]
+Matrix Compiler2: 31.36 KB object code size  10.1/8.3/[3.2]
+

@@ -1,4 +1,4 @@
-Circuit: * D:\repos\MPEI\MPEI_Magistracy\Term_3\memory_system\variant_1\KM4\mux_test.asc
+Circuit: * C:\Users\begow\Desktop\all\repos\MPEI\MPEI_Magistracy\Term_3\memory_system\variant_1\KM4\mux_test.asc
 
 WARNING: Node X2:NC_01 is floating.
 WARNING: Node X2:NC_02 is floating.
@@ -71,7 +71,22 @@ Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
-Early termination of direct N-R iteration.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -93,21 +108,21 @@ Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Thu Dec 05 12:37:16 2024
-Total elapsed time: 1.197 seconds.
+Date: Sat Dec 07 01:25:13 2024
+Total elapsed time: 3.862 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 11266
-traniter = 10895
-tranpoints = 4824
-accept = 4650
-rejected = 174
-matrix size = 232
-fillins = 118
+totiter = 12990
+traniter = 12430
+tranpoints = 4921
+accept = 4699
+rejected = 222
+matrix size = 486
+fillins = 170
 solver = Normal
-Thread vector: 93.7/47.3[4] 19.6/9.7[4] 5.0/3.8[4] 2.5/4.6[1]  2592/500
-Matrix Compiler1: 43.48 KB object code size  27.3/8.7/[5.0]
-Matrix Compiler2: 31.35 KB object code size  8.3/7.9/[3.4]
+Thread vector: 329.5/153.7[8] 34.1/21.4[8] 12.7/7.8[8] 4.8/9.7[1]  2592/500
+Matrix Compiler1: 79.32 KB object code size  42.7/12.6/[10.5]
+Matrix Compiler2: 61.74 KB object code size  23.9/22.2/[8.6]
 
