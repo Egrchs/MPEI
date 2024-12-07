@@ -59,6 +59,7 @@ Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
 Starting Gmin stepping
 Gmin = 10
@@ -85,31 +86,24 @@ vernier = 0.00195313
 vernier = 0.000976563
 vernier = 0.000488281
 Gmin = 0
-Gmin stepping failed
-
-Starting source stepping with srcstepmethod=0
-Source Step = 3.0303%
-Source Step = 33.3333%
-Source Step = 63.6364%
-Source Step = 93.9394%
-Source stepping succeeded in finding the operating point.
+Gmin stepping succeeded in finding the operating point.
 
 
-Date: Sat Dec 07 03:33:54 2024
-Total elapsed time: 6.091 seconds.
+Date: Sat Dec 07 04:07:09 2024
+Total elapsed time: 3.619 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 13905
-traniter = 11835
-tranpoints = 4882
-accept = 4675
-rejected = 207
-matrix size = 531
-fillins = 455
+totiter = 18211
+traniter = 16491
+tranpoints = 6097
+accept = 5533
+rejected = 564
+matrix size = 544
+fillins = 272
 solver = Normal
-Thread vector: 363.0/168.3[10] 43.9/25.6[10] 16.4/8.7[10] 4.7/6.7[1]  2592/500
-Matrix Compiler1: 100.04 KB object code size  52.1/18.4/[12.1]
-Matrix Compiler2: 71.62 KB object code size  26.0/22.5/[8.1]
+Thread vector: 249.4/117.2[10] 27.4/15.8[10] 10.7/6.2[10] 2.1/7.3[1]  2592/500
+Matrix Compiler1: 96.18 KB object code size  29.4/11.2/[7.5]
+Matrix Compiler2: 69.68 KB object code size  11.9/9.6/[3.7]
 
