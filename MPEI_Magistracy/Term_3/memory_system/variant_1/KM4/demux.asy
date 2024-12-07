@@ -22,3 +22,6 @@ PINATTR SpiceOrder 6
 PIN 32 80 TOP 8
 PINATTR PinName S1
 PINATTR SpiceOrder 7
+PIN -16 -16 RIGHT 8
+PINATTR PinName sel
+PINATTR SpiceOrder 8
