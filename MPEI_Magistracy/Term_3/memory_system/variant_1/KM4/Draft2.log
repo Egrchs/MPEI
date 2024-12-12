@@ -1,17 +1,19 @@
 Circuit: * C:\Users\begow\Desktop\all\repos\MPEI\MPEI_Magistracy\Term_3\memory_system\variant_1\KM4\Draft2.asc
 
-WARNING: Node N028 is floating.
-WARNING: Node N002 is floating.
-WARNING: Node N039 is floating.
-WARNING: Node N044 is floating.
-WARNING: Node N029 is floating.
-WARNING: Node N026 is floating.
-WARNING: Node N027 is floating.
+WARNING: Node N006 is floating.
+WARNING: Node NC_01 is floating.
+WARNING: Node NC_02 is floating.
+WARNING: Node NC_03 is floating.
 
-WARNING: Less than two connections to node N028.  This node is used by M1.
-WARNING: Less than two connections to node N029.  This node is used by M15.
-WARNING: Less than two connections to node N026.  This node is used by M28.
-WARNING: Less than two connections to node N027.  This node is used by M41.
+WARNING: Less than two connections to node N006.  This node is used by M1.
+WARNING: Less than two connections to node NC_01.  This node is used by M:X2:1.
+WARNING: Less than two connections to node NC_02.  This node is used by M:X3:1.
+WARNING: Less than two connections to node NC_03.  This node is used by M:X5:1.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
 Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
@@ -36,21 +38,21 @@ Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
 
-Date: Thu Dec 05 03:57:24 2024
-Total elapsed time: 1.501 seconds.
+Date: Wed Dec 11 10:44:53 2024
+Total elapsed time: 0.889 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 5312
-traniter = 4847
-tranpoints = 2213
-accept = 2172
-rejected = 41
-matrix size = 313
-fillins = 36
+totiter = 5518
+traniter = 4992
+tranpoints = 2317
+accept = 2246
+rejected = 71
+matrix size = 141
+fillins = 4
 solver = Normal
-Thread vector: 219.0/53.9[6] 32.4/10.6[6] 9.7/5.6[6] 2.7/3.0[1]  2592/500
-Matrix Compiler1: 54.50 KB object code size  25.8/9.8/[8.3]
-Matrix Compiler2: 40.06 KB object code size  12.4/12.3/[4.7]
+Thread vector: 66.1/59.3[2] 10.6/7.2[2] 3.8/3.4[1] 0.9/5.0[1]  2592/500
+Matrix Compiler1: 19.16 KB object code size  6.6/3.0/[2.6]
+Matrix Compiler2: 16.56 KB object code size  3.2/3.9/[1.5]
 
