@@ -5,7 +5,7 @@ V3 YT 0 PWL(0 0 6e-6 0 6.01e-6 1.5)
 V4 WL 0 PWL(0 0 2e-6 0 2.01e-6 1.5 3e-6 1.5 3.01e-6 0 5.9e-6 0 5.91e-6 1.5)
 V5 IN 0 PULSE(0 1.5 0 1e-8 1e-8 3.5e-6 7e-6 2)
 V6 EN 0 PULSE(0 1.5 0 1e-8 1e-8 3e-6 6e-6 1)
-XX3 N007 WL N008 N009 ~YT NC_01 N012 N001 N002 N005 N006 open_bitline_array
+XX3 N007 WL N008 N009 ~YT NC_01 N011 N001 N002 N005 N006 open_bitline_array
 XX4 N001 N002 N005 N006 0 0 N003 mux
 XX1 IN N001 N002 N005 N006 0 0 EN demux
 XX2 N003 N004 invert
@@ -14,9 +14,10 @@ XX6 P003 P001 invert
 XX7 P004 P003 invert
 XX8 N014 P004 invert
 XX9 P002 NC_02 invert
-XX10 N010 N013 N012 dff
 V7 N013 0 PULSE(0 1.5 0 0 0 100e-9 200e-9)
 XX11 ~YT N010 invert
+XX10 N010 N013 N011 NC_03 d_latch
+XX12 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 addres_decoder
 
 * block symbol definitions
 .subckt open_bitline_array WL0 WL1 WL2 WL3 ~YT Eq YT BL0 BL1 BL2 BL3
@@ -81,11 +82,23 @@ V1 N001 0 1.5
 .inc 130nm_bulk.pm
 .ends invert
 
-.subckt dff D clk Q
-XX1 D N002 N001 NC_01 d_latch
-XX2 N001 clk Q NC_02 d_latch
-XX3 clk N002 invert
-.ends dff
+.subckt d_latch D clk Q nQ
+XX1 D clk N001 nand
+XX2 clk N003 N002 nand
+XX3 N001 nQ Q nand
+XX4 Q N002 nQ nand
+XX5 D N003 invert
+.ends d_latch
+
+.subckt addres_decoder A0 A1 D0 D1 D2 D3
+XX1 vdd N001 A1 D2 charge_decoder
+XX2 vdd A0 A1 D3 charge_decoder
+XX3 vdd A0 N002 D1 charge_decoder
+XX4 vdd N001 N002 D0 charge_decoder
+V1 vdd 0 1.5
+XX5 A0 N001 invert
+XX6 A1 N002 invert
+.ends addres_decoder
 
 .subckt memory_cell WL BL
 M1 BL WL N001 N001 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
@@ -120,24 +133,6 @@ V1 N001 0 1.5
 .inc 130nm_bulk.pm
 .ends three_state_new
 
-.subckt addres_decoder A0 A1 D0 D1 D2 D3
-XX1 vdd N001 A1 D2 charge_decoder
-XX2 vdd A0 A1 D3 charge_decoder
-XX3 vdd A0 N002 D1 charge_decoder
-XX4 vdd N001 N002 D0 charge_decoder
-V1 vdd 0 1.5
-XX5 A0 N001 invert
-XX6 A1 N002 invert
-.ends addres_decoder
-
-.subckt d_latch D clk Q nQ
-XX1 D clk N001 nand
-XX2 clk N003 N002 nand
-XX3 N001 nQ Q nand
-XX4 Q N002 nQ nand
-XX5 D N003 invert
-.ends d_latch
-
 .subckt nand A B OUT
 M1 OUT A N001 N001 PMOS l=130e-9 w=2600e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
 M2 N002 B 0 0 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
@@ -146,15 +141,6 @@ M4 OUT A N002 N002 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-
 V1 N001 0 1.5
 .inc 130nm_bulk.pm
 .ends nand
-
-.subckt nor A B OUT
-M1 N002 A N001 N001 PMOS l=130e-9 w=2600e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
-M2 OUT A 0 0 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
-M3 OUT B N002 N002 PMOS l=130e-9 w=2600e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
-M4 OUT B 0 0 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
-V1 N001 0 1.5
-.inc 130nm_bulk.pm
-.ends nor
 
 .subckt charge_decoder select a0 a1 out
 M1 N001 a1 N002 N002 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
@@ -167,6 +153,15 @@ M7 N001 out VDD VDD PMOS l=260e-9 w=2600e-9 ad=676000e-18 as=676000e-18 pd=3640e
 V3 VDD 0 1.5
 .inc 130nm_bulk.pm
 .ends charge_decoder
+
+.subckt nor A B OUT
+M1 N002 A N001 N001 PMOS l=130e-9 w=2600e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M2 OUT A 0 0 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M3 OUT B N002 N002 PMOS l=130e-9 w=2600e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+M4 OUT B 0 0 NMOS l=130e-9 w=1300e-9 ad=676000e-18 as=676000e-18 pd=3640e-9 ps=3640e-9
+V1 N001 0 1.5
+.inc 130nm_bulk.pm
+.ends nor
 
 .model NMOS NMOS
 .model PMOS PMOS

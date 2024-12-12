@@ -26,6 +26,8 @@ WARNING: Node X4:NC_14 is floating.
 WARNING: Node X4:NC_15 is floating.
 WARNING: Node X4:NC_16 is floating.
 WARNING: Node N014 is floating.
+WARNING: Node NC_05 is floating.
+WARNING: Node NC_04 is floating.
 
 WARNING: Less than two connections to node EQ.  This node is used by V2.
 WARNING: Less than two connections to node YT.  This node is used by V3.
@@ -133,16 +135,19 @@ Gmin = 1.6455e-006
 Gmin = 1.76685e-007
 Gmin = 1.89714e-008
 vernier = 0.5
-vernier = 0.25
-vernier = 0.125
-vernier = 0.0625
-vernier = 0.03125
-Gmin = 7.77068e-009
-vernier = 0.015625
-vernier = 0.0078125
-vernier = 0.00390625
-vernier = 0.00195313
-vernier = 0.000976563
+vernier = 0.666667
+Gmin = 7.10328e-009
+vernier = 0.333333
+vernier = 0.166667
+vernier = 0.0833333
+vernier = 0.0416667
+vernier = 0.0208333
+vernier = 0.0104167
+vernier = 0.00520833
+vernier = 0.00260417
+Gmin = 6.08853e-009
+vernier = 0.00130208
+vernier = 0.000651042
 vernier = 0.000488281
 Gmin = 0
 Gmin stepping failed
@@ -155,21 +160,21 @@ Source Step = 93.9394%
 Source stepping succeeded in finding the operating point.
 
 
-Date: Thu Dec 12 11:08:19 2024
-Total elapsed time: 59.821 seconds.
+Date: Thu Dec 12 11:41:33 2024
+Total elapsed time: 44.763 seconds.
 
 tnom = 27
 temp = 27
 method = modified trap
-totiter = 50050
-traniter = 47756
-tranpoints = 13399
-accept = 10023
-rejected = 3376
-matrix size = 1187
-fillins = 3486
+totiter = 30576
+traniter = 28029
+tranpoints = 8283
+accept = 6656
+rejected = 1627
+matrix size = 1247
+fillins = 3043
 solver = Normal
-Thread vector: 930.6/514.4[12] 159.6/72.7[12] 43.0/23.1[12] 14.3/23.9[1]  2592/500
-Matrix Compiler1: 484.48 KB object code size  260.0/94.3/[57.6]
-Matrix Compiler2: 203.40 KB object code size  68.9/53.6/[26.0]
+Thread vector: 1000.6/523.0[12] 115.1/62.7[12] 76.1/41.5[12] 14.6/22.7[1]  2592/500
+Matrix Compiler1: 407.50 KB object code size  237.4/87.4/[83.2]
+Matrix Compiler2: 202.68 KB object code size  69.3/56.1/[20.9]
 
