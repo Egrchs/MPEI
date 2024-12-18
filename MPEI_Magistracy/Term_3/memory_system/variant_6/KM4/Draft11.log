@@ -1,0 +1,29 @@
+Circuit: * C:\Users\begow\Desktop\all\repos\MPEI\MPEI_Magistracy\Term_3\memory_system\variant_1\KM4\Draft11.asc
+
+WARNING: Less than two connections to node VDD.  This node is used by V1.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Warning: toxe, toxp and dtox all given and toxe != toxp + dtox; dtox ignored.
+Direct Newton iteration for .op point succeeded.
+
+Date: Fri Dec 13 00:49:22 2024
+Total elapsed time: 0.831 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 7360
+traniter = 7329
+tranpoints = 2614
+accept = 2168
+rejected = 446
+matrix size = 166
+fillins = 0
+solver = Normal
+Thread vector: 92.5/55.4[3] 15.5/9.7[3] 4.2/3.4[3] 1.1/1.7[1]  2592/500
+Matrix Compiler1: 21.25 KB object code size  12.2/4.4/[3.3]
+Matrix Compiler2: 19.75 KB object code size  5.9/5.6/[1.9]
+
